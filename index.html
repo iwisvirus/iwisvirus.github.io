@@ -5,9 +5,9 @@ layout: default
 <div class="posts">
 
   <!-- 1️⃣ DFIR category first -->
-  {% if site.categories.dfir %}
+  {% if site.categories.DFIR %}
     <h1 class="category-title">
-      {{ site.category_names.dfir | default: "DFIR" }}
+      {{ site.category_names.DFIR | default: "DFIR" }}
     </h1>
 
     {% assign posts = site.categories.dfir | sort: "date" | reverse %}
