@@ -270,7 +270,48 @@ nav {
     font-size: 15px;
   }
 }
+.homepage-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+}
 
+.homepage-options .option {
+  flex: 1 1 300px;
+  padding: 2rem;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  text-align: center;
+  transition: box-shadow 0.2s ease;
+}
+
+.homepage-options .option:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.homepage-options .option h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.homepage-options .option p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+.homepage-options .button {
+  padding: 0.7rem 1.5rem;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.homepage-options .button:hover {
+  background-color: #0056b3;
+}
 .wrapper-footer {
   margin-top: 50px;
   border-top: 1px solid #ddd;
