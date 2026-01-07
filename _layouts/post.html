@@ -12,11 +12,11 @@ layout: default
   <p>
     Categories:
     {% for category in page.categories %}
-      <a href="/category/{{ category }}">{{ category }}</a>
+      {{ site.category_names[category] | default: category }}
+      {% unless forloop.last %}, {% endunless %}
     {% endfor %}
   </p>
 {% endif %}
-
   <div class="date">
     Written on {{ page.date | date: "%B %e, %Y" }}
   </div>
