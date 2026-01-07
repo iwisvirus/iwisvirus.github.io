@@ -26,7 +26,7 @@ layout: default
   {% endif %}
 
   <!-- 2️⃣ Other categories -->
-  {% assign other_categories = site.categories | where_exp: "item", "item[0] != 'dfir'" | sort %}
+  {% assign other_categories = site.categories | where_exp: "item", "item[0] != 'DFIR'" | sort %}
   {% for category in other_categories %}
     <h1 class="category-title">
       {{ site.category_names[category[0]] | default: category[0] }}
