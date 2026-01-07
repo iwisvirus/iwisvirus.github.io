@@ -285,11 +285,26 @@ nav {
   margin-bottom: 1rem;
 }
 
-/* Post titles under categories */
+/* Post title smaller */
 .post-title {
-  font-size: 1.1rem;
-  margin: 0.3rem 0;
+  font-size: 1.4rem;  /* small but readable */
+  margin: 0;
 }
+
+/* Date below title, even smaller and lighter */
+.post-date {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 0 0 1rem 0;
+}
+
+/* Categories styling */
+.post-categories {
+  font-size: 0.9rem;
+  color: #444;
+  margin-bottom: 1.5rem;
+}
+
 
 .post-title a {
   text-decoration: none;
