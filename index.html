@@ -2,4 +2,23 @@
 layout: default 
 ---
 
-<div class="posts"> {% assign sorted_categories = site.categories | sort %} {% for category in sorted_categories %} <h1 class="category-title"> {{ site.category_names[category[0]] | default: category[0] }} </h1> {% assign posts = category[1] | sort: "date" | reverse %} {% for post in posts %} <article class="post"> <h3 class="post-title"> <a href="{{ site.baseurl }}{{ post.url }}"> {{ post.title }} </a> </h3> <p class="post-date"> {{ post.date | date: "%B %d, %Y" }} </p> </article> {% endfor %} {% endfor %} </div>
+<div class="posts"> 
+  {% assign sorted_categories = site.categories | sort %} 
+  {% for category in sorted_categories %} 
+  
+  <h1 class="category-title"> 
+    {{ site.category_names[category[0]] | default: category[0] }} 
+  </h1> 
+  
+  {% assign posts = category[1] | sort: "date" | reverse %} 
+  {% for post in posts %} 
+  <article class="post"> 
+    <h3 class="post-title"> 
+      <a href="{{ site.baseurl }}{{ post.url }}"> {{ post.title }} 
+      </a> 
+    </h3> 
+    <p class="post-date"> {{ post.date | date: "%B %d, %Y" }} 
+    </p> 
+  </article> 
+  {% endfor %} {% endfor %} 
+</div>
