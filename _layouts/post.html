@@ -8,15 +8,14 @@ layout: default
   <div class="entry">
     {{ content }}
   </div>
-  {% if page.categories.size > 0 %}
-    <div class="post-categories">
-      <p>Filed under: 
-        {% for category in page.categories %}
-          <span>{{ category }}{% unless forloop.last %}, {% endunless %}</span>
-        {% endfor %}
-      </p>
-    </div>
-  {% endif %}
+{% if page.categories %}
+  <p>
+    Categories:
+    {% for category in page.categories %}
+      <a href="/category/{{ category }}">{{ category }}</a>
+    {% endfor %}
+  </p>
+{% endif %}
 
   <div class="date">
     Written on {{ page.date | date: "%B %e, %Y" }}
