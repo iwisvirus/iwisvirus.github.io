@@ -18,7 +18,7 @@ layout: default
 
         <h1>
           <a href="{{ site.baseurl }}{{ post.url }}">
-            {{post.date}} {{ post.title }}
+            {{post.date| date: "%Y-%m-%d"}}-{{ post.title }}
           </a>
         </h1>
 
