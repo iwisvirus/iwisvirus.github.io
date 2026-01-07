@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Why Cybersecurity?
-date: 2025-12-09
+date: 2025-08-31
 categories: DFIR
 ---
 
