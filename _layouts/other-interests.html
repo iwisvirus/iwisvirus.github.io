@@ -1,0 +1,35 @@
+---
+layout: default
+---
+
+<h1>Other Interests</h1>
+
+<div class="posts">
+
+  {% comment %}
+  Loop over all categories except DFIR
+  {% endcomment %}
+  {% assign other_categories = site.categories | where_exp: "item", "item[0] != 'DFIR'" | sort %}
+
+  {% for category in other_categories %}
+    <h2 class="category-title">
+      {{ site.category_names[category[0]] | default: category[0] }}
+    </h2>
+
+    {% assign posts = category[1] | sort: "date" | reverse %}
+    {% for post in posts %}
+      <article class="post">
+        <h3 class="post-title">
+          <a href="{{ site.baseurl }}{{ post.url }}">
+            {{ post.title }}
+          </a>
+        </h3>
+        <p class="post-date">
+          {{ post.date | date: "%B %d, %Y" }}
+        </p>
+      </article>
+    {% endfor %}
+
+  {% endfor %}
+
+</div>
