@@ -1,0 +1,31 @@
+---
+layout: default
+---
+
+<h1>DFIR Journey</h1>
+
+<div class="posts">
+
+  {% comment %}
+  Pull posts only from the DFIR category
+  {% endcomment %}
+  {% if site.categories.DFIR %}
+    {% assign posts = site.categories.DFIR | sort: "date" | reverse %}
+    {% for post in posts %}
+      <article class="post">
+        <h3 class="post-title">
+          <a href="{{ site.baseurl }}{{ post.url }}">
+            {{ post.title }}
+          </a>
+        </h3>
+        <p class="post-date">
+          {{ post.date | date: "%B %d, %Y" }}
+        </p>
+      </article>
+    {% endfor %}
+  {% else %}
+    <p>No DFIR posts yet.</p>
+  {% endif %}
+
+</div>
+
