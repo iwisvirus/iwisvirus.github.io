@@ -1,12 +1,11 @@
 ---
 layout: default
 ---
-
-
 <div class="posts"> 
   {% assign sorted_categories = site.categories | sort %} 
   {% for category in sorted_categories %} 
   
+  {% unless category[0] == "DFIR" %}
   <h1 class="category-title"> 
     {{ site.category_names[category[0]] | default: category[0] }} 
   </h1> 
@@ -21,5 +20,8 @@ layout: default
     <p class="post-date"> {{ post.date | date: "%B %d, %Y" }} 
     </p> 
   </article> 
-  {% endfor %} {% endfor %} 
+  {% endfor %}
+  {% endunless %}
+  
+  {% endfor %} 
 </div>
