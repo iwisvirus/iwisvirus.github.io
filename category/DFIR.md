@@ -1,7 +1,10 @@
 ---
-layout: default
+layout: category
+category: DFIR
 title: DFIR
+permalink: /category/DFIR/
 ---
+
 
 <h1>DFIR Posts</h1>
 
