@@ -9,7 +9,7 @@ layout: default
   {% comment %}
   Loop over all categories except DFIR
   {% endcomment %}
-  {% assign other_categories = site.categories | where_exp: "item", "item[0] != DFIR" | sort %}
+  {% assign other_categories = site.categories | where_exp: "item", "item[0] != 'DFIR'" | sort %}
 
   {% for category in other_categories %}
     <h2 class="category-title">
