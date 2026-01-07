@@ -8,7 +8,7 @@ layout: default
 
   {% for category in sorted_categories %}
     <h1 class="category-title">
-      {{ site.category_names[category[0]] | default: category[0] | capitalize }}
+      {{ site.category_names[category[0]] | default: category[0] }}
     </h1>
 
 
