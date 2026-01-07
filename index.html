@@ -7,28 +7,27 @@ layout: default
   {% assign sorted_categories = site.categories | sort %}
 
   {% for category in sorted_categories %}
-    <h2 style="margin-top: 2.5rem;">
+    <h1 class="category-title">
       {{ site.category_names[category[0]] | default: category[0] | capitalize }}
-    </h2>
+    </h1>
+
 
 
     {% assign posts = category[1] | sort: "date" | reverse %}
 
     {% for post in posts %}
       <article class="post">
-
-        <h1>
+        <h3 class="post-title">
           <a href="{{ site.baseurl }}{{ post.url }}">
-            {{post.date| date: "%Y-%m-%d"}}-{{ post.title }}
+            {{ post.title }}
           </a>
-        </h1>
-
-        <div class="entry">
-          {{ post.excerpt }}
-        </div>
-
+        </h3>
+        <p class="post-date">
+          {{ post.date | date: "%B %d, %Y" }}
+        </p>
       </article>
-    {% endfor %}
+      {% endfor %}
+
 
   {% endfor %}
 
