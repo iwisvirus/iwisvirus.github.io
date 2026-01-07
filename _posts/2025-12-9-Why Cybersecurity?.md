@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Why Cybersecurity?
+categories: DFIR
 ---
 
 After graduating from University of Toronto with a computer science, I was struggling. Then I ended up taking a cybersecurity course in google. After the first couple videos, I knew this is going to be my career. I have never felt so passionate and excited about going home and taking the next course. For me, cybersecurity is like an onion (well known quote from Shrek). The more you learn, the more depth there is and more I want to peel it out and be a master at it. There were multiple reasons why I fell in love with cybersecurity from the outer layer of it. 
