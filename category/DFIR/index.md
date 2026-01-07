@@ -1,5 +1,5 @@
 ---
-layout: category
+layout: dfir
 category: DFIR
 title: DFIR
 ---
