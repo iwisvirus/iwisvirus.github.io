@@ -13,9 +13,6 @@ avatar: https://github.com/iwisvirus/iwisvirus.github.io/blob/master/images/jeky
 #
 # Flags below are optional
 #
-category_names:
-  dfir: DFIR
-  obsession: Obsession
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
