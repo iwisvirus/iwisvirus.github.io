@@ -8,8 +8,9 @@ layout: default
 
   {% for category in sorted_categories %}
     <h2 style="margin-top: 2.5rem;">
-      {{ category[0] | capitalize }}
+      {{ site.category_names[category[0]] | default: category[0] | capitalize }}
     </h2>
+
 
     {% assign posts = category[1] | sort: "date" | reverse %}
 
