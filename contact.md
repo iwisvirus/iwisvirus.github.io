@@ -77,12 +77,15 @@ permalink: /contact/
     > Secure channel established.
   </div>
 
+  <div class="terminal-header">
+    $cat contact.info <br>
+  </div>
+  
   <div class="terminal-line">
-    $ cat contact.info <br>
-    > Email     : iris.myung00@gmail.com
-    > GitHub    : iwisvirus
-    > Instagram : irizzler__
-    > LinkedIn  : irismyung
+    > Email     : iris.myung00@gmail.com <br>
+    > GitHub    : iwisvirus <br>
+    > Instagram : irizzler__ <br>
+    > LinkedIn  : irismyung <br>
   </div>
 
   <div class="input-line">
