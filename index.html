@@ -1,167 +1,130 @@
 ---
 layout: default
-title: Home
+title: Welcome
 ---
 
 <style>
-  h1 {
-    text-align: center;
-    margin-bottom: 40px;
+  .terminal {
+    background: #0b0f14;
+    color: #d1d5db;
+    font-family: "Courier New", monospace;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.6);
+    max-width: 800px;
+    margin: 60px auto;
   }
 
-  .brain-container {
-    position: relative;
-    max-width: 1400px;
-    width: 100%;
-    margin: 0 auto;
+  .terminal-header {
+    color: #9ca3af;
+    margin-bottom: 20px;
   }
 
-  .brain-svg {
-    width: 100%;
-    height: auto;
-    transform: scale(1.05);
-    transform-origin: center;
-    filter: drop-shadow(0 25px 60px rgba(0,0,0,0.35));
+  .terminal-line {
+    margin: 10px 0;
   }
 
-  .brain-hemisphere {
-    cursor: pointer;
-    transition: transform 0.3s ease, filter 0.3s ease;
+  .prompt {
+    color: #22c55e;
   }
 
-  .brain-hemisphere:hover {
-    transform: scale(1.03);
-    filter: brightness(1.15) drop-shadow(0 0 25px rgba(255,255,255,0.25));
-  }
-
-  .brain-content {
-    position: absolute;
-    inset: 0;
-    display: flex;
-    pointer-events: none;
-  }
-
-  .hemisphere-content {
-    flex: 1;
+  .input-line {
     display: flex;
     align-items: center;
-    justify-content: center;
   }
 
-  .hemisphere-content h2 {
-    color: white;
-    font-size: 2rem;
-    text-shadow: 2px 2px 10px rgba(0,0,0,0.6);
-    font-weight: 600;
+  input {
+    background: transparent;
+    border: none;
+    color: #e5e7eb;
+    font-family: inherit;
+    font-size: 1rem;
+    outline: none;
+    margin-left: 8px;
+    width: 100%;
   }
 
-  @media (max-width: 768px) {
-    .hemisphere-content h2 {
-      font-size: 1.4rem;
-    }
-    .brain-svg {
-      transform: scale(1.1);
-    }
+  .cursor {
+    display: inline-block;
+    width: 10px;
+    height: 18px;
+    background: #22c55e;
+    margin-left: 4px;
+    animation: blink 1s infinite;
+  }
+
+  @keyframes blink {
+    50% { opacity: 0; }
+  }
+
+  .error {
+    color: #ef4444;
+  }
+
+  .hint {
+    color: #60a5fa;
+    font-size: 0.9rem;
   }
 </style>
 
-<h1>Hey, take a peek into my brain 🧠</h1>
-
-<div class="brain-container">
-  <svg class="brain-svg" viewBox="0 0 500 420" xmlns="http://www.w3.org/2000/svg">
-
-    <defs>
-      <!-- Realistic gradients -->
-      <radialGradient id="leftGradient" cx="35%" cy="35%">
-        <stop offset="0%" stop-color="#9ad9ff"/>
-        <stop offset="55%" stop-color="#5bb8f0"/>
-        <stop offset="100%" stop-color="#2f7fb3"/>
-      </radialGradient>
-
-      <radialGradient id="rightGradient" cx="65%" cy="35%">
-        <stop offset="0%" stop-color="#ffb3cc"/>
-        <stop offset="55%" stop-color="#f07aa8"/>
-        <stop offset="100%" stop-color="#b84f76"/>
-      </radialGradient>
-
-      <!-- Organic distortion -->
-      <filter id="organicNoise">
-        <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="2" seed="2"/>
-        <feDisplacementMap in="SourceGraphic" scale="3"/>
-      </filter>
-    </defs>
-
-    <!-- LEFT / DFIR -->
-    <a href="{{ site.baseurl }}/category/DFIR/">
-      <path class="brain-hemisphere"
-        filter="url(#organicNoise)"
-        d="
-        M 250 35
-        C 235 30, 210 25, 190 25
-        C 145 25, 105 40, 70 65
-        C 45 85, 30 110, 25 145
-        C 20 175, 20 210, 25 245
-        C 30 280, 45 315, 70 340
-        C 95 365, 130 385, 175 390
-        C 205 395, 235 385, 250 370
-        L 250 35
-        Z"
-        fill="url(#leftGradient)">
-        <title>💻 DFIR Journey</title>
-      </path>
-    </a>
-
-    <!-- RIGHT / OTHER -->
-    <a href="{{ site.baseurl }}/category/other-interests/">
-      <path class="brain-hemisphere"
-        filter="url(#organicNoise)"
-        transform="translate(4,-3)"
-        d="
-        M 250 35
-        C 265 30, 290 25, 310 25
-        C 355 25, 395 40, 430 65
-        C 455 85, 470 110, 475 145
-        C 480 175, 480 210, 475 245
-        C 470 280, 455 315, 430 340
-        C 405 365, 370 385, 325 390
-        C 295 395, 265 385, 250 370
-        L 250 35
-        Z"
-        fill="url(#rightGradient)">
-        <title>🎨 Other Adventures</title>
-      </path>
-    </a>
-
-    <!-- Brain folds -->
-    <g opacity="0.35" stroke="white" fill="none" stroke-linecap="round" stroke-linejoin="round">
-      <!-- left -->
-      <path d="M 90 115 Q 120 90, 150 115" stroke-width="3"/>
-      <path d="M 80 155 Q 120 130, 165 155" stroke-width="2.5"/>
-      <path d="M 75 200 Q 120 180, 175 205" stroke-width="3"/>
-      <path d="M 85 245 Q 135 230, 190 255" stroke-width="2.8"/>
-      <path d="M 100 295 Q 155 280, 210 305" stroke-width="2.5"/>
-
-      <!-- right -->
-      <path d="M 410 115 Q 380 90, 350 115" stroke-width="3"/>
-      <path d="M 420 155 Q 380 130, 335 155" stroke-width="2.5"/>
-      <path d="M 425 200 Q 380 180, 325 205" stroke-width="3"/>
-      <path d="M 415 245 Q 365 230, 310 255" stroke-width="2.8"/>
-      <path d="M 400 295 Q 345 280, 290 305" stroke-width="2.5"/>
-    </g>
-
-    <!-- Center divide -->
-    <line x1="250" y1="35" x2="250" y2="380"
-          stroke="rgba(255,255,255,0.5)"
-          stroke-width="3"
-          stroke-dasharray="10,8"/>
-  </svg>
-
-  <div class="brain-content">
-    <div class="hemisphere-content">
-      <h2>💻 DFIR Journey</h2>
-    </div>
-    <div class="hemisphere-content">
-      <h2>🎨 Other Adventures</h2>
-    </div>
+<div class="terminal">
+  <div class="terminal-header">
+    iris@portfolio:~$
   </div>
+
+  <div class="terminal-line">
+    > Initializing connection...
+  </div>
+
+  <div class="terminal-line">
+    > Do you want to get to know me? (yes / no)
+  </div>
+
+  <div class="input-line">
+    <span class="prompt">$</span>
+    <input id="terminalInput" type="text" autofocus />
+    <span class="cursor"></span>
+  </div>
+
+  <div id="terminalOutput"></div>
 </div>
+
+<script>
+  const input = document.getElementById("terminalInput");
+  const output = document.getElementById("terminalOutput");
+
+  input.addEventListener("keydown", function(e) {
+    if (e.key === "Enter") {
+      const value = input.value.trim().toLowerCase();
+      input.value = "";
+
+      if (value === "yes" || value === "y") {
+        output.innerHTML += `
+          <div class="terminal-line">> Access granted.</div>
+          <div class="terminal-line hint">Redirecting to DFIR Journey...</div>
+        `;
+        setTimeout(() => {
+          window.location.href = "{{ site.baseurl }}/category/DFIR/";
+        }, 1200);
+
+      } else if (value === "no" || value === "n") {
+        output.innerHTML += `
+          <div class="terminal-line">> Fair enough.</div>
+          <div class="terminal-line hint">Redirecting to Other Adventures...</div>
+        `;
+        setTimeout(() => {
+          window.location.href = "{{ site.baseurl }}/category/other-interests/";
+        }, 1200);
+
+      } else {
+        output.innerHTML += `
+          <div class="terminal-line error">
+            > Command not recognized. Type yes or no.
+          </div>
+        `;
+      }
+
+      output.scrollTop = output.scrollHeight;
+    }
+  });
+</script>
