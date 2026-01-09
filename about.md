@@ -68,31 +68,25 @@ permalink: /about/
   }
 </style>
 
-$ whoami
-> Iris Myung
-> Software Developer | DFIR-focused | Curious by design
-
-$ cat about.txt
-> I’m a software developer with experience in Java, cloud systems,
-> and data-driven projects. I’m transitioning into Digital Forensics
-> and Cybersecurity with a long-term goal of government work.
-
 <div class="terminal">
   <div class="terminal-header">
     $cd whoami<br>
   </div>
 
   <div class="terminal-line">
-    > Iris Myung
+    > Iris Myung <br>
     > DFIR
   </div>
-
-  <div class="terminal-line">
+  
+  <div class="terminal-header">
     $ cat about.txt
-    >  I was born in South Korea and came to Canada in grade 10. 
-    >  I graduated University of Toronto in 2024 with a Computer Science 
-    >  Major and Mathematics and Statistics Minor. I am currently working on 
-    >  pursuing a career in DFIR hoping to work in the government for the future.
+  </div>  
+  
+  <div class="terminal-line">
+    >  I was born in South Korea and came to Canada in grade 10. <br>
+    >  I graduated University of Toronto in 2024 with a Computer Science <br>
+    >  Major and Mathematics and Statistics Minor. I am currently working on <br>
+    >  pursuing a career in DFIR hoping to work in the government for the future.<br>
     >  I am also studying French for my Permanent Residency in Canada.
   </div>
 
