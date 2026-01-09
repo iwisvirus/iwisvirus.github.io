@@ -2,22 +2,211 @@
 layout: default
 title: Home
 ---
+<style>
+  .brain-container {
+    position: relative;
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .brain-svg {
+    width: 100%;
+    height: auto;
+    filter: drop-shadow(0 10px 30px rgba(0,0,0,0.3));
+  }
+
+  .brain-hemisphere {
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .brain-hemisphere:hover {
+    opacity: 0.85;
+    filter: brightness(1.1);
+  }
+
+  .left-hemisphere {
+    fill: #4facfe;
+  }
+
+  .right-hemisphere {
+    fill: #fa709a;
+  }
+
+  .brain-details {
+    fill: rgba(255, 255, 255, 0.3);
+  }
+
+  .brain-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    pointer-events: none;
+  }
+
+  .hemisphere-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+  }
+
+  .hemisphere-content h2 {
+    color: white;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    text-align: center;
+  }
+
+  .hemisphere-content p {
+    color: rgba(255, 255, 255, 0.95);
+    font-size: 1em;
+    margin-bottom: 20px;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    line-height: 1.4;
+    max-width: 200px;
+  }
+
+  .button {
+    padding: 12px 28px;
+    background: rgba(255, 255, 255, 0.95);
+    border: none;
+    border-radius: 50px;
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    display: inline-block;
+    pointer-events: auto;
+  }
+
+  .left-side .button {
+    color: #4facfe;
+  }
+
+  .right-side .button {
+    color: #fa709a;
+  }
+
+  .button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+  }
+
+  @media (max-width: 768px) {
+    .hemisphere-content h2 {
+      font-size: 1.3em;
+    }
+
+    .hemisphere-content p {
+      font-size: 0.9em;
+    }
+
+    .button {
+      padding: 10px 20px;
+      font-size: 0.9em;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .hemisphere-content {
+      padding: 20px 10px;
+    }
+
+    .hemisphere-content h2 {
+      font-size: 1.1em;
+    }
+
+    .hemisphere-content p {
+      font-size: 0.8em;
+      max-width: 140px;
+    }
+
+    .button {
+      padding: 8px 16px;
+      font-size: 0.85em;
+    }
+  }
+</style>
 
 <h1>Hey, you can stalk me.</h1>
 <p>Which side of my brain do you want to explore?</p>
 
-<div class="homepage-options">
+<div class="brain-container">
+  <svg class="brain-svg" viewBox="0 0 500 350" xmlns="http://www.w3.org/2000/svg">
+    <!-- Left Hemisphere (Logical/DFIR) -->
+    <a href="{{ site.baseurl }}/category/DFIR/" class="brain-link">
+      <path class="brain-hemisphere left-hemisphere" d="
+        M 250 60
+        C 170 60, 110 85, 85 125
+        C 60 165, 50 215, 55 265
+        C 58 300, 75 325, 100 340
+        C 130 358, 170 360, 210 355
+        C 230 352, 245 343, 250 330
+        L 250 60
+        Z
+      ">
+        <title>💻 DFIR Journey - Click to explore</title>
+      </path>
+    </a>
 
-  <div class="option">
-    <h2>💻 DFIR Journey</h2>
-    <p>Posts about my career, learning, and DFIR experiments.</p>
-    <a class="button" href="{{ site.baseurl }}/category/DFIR/">Explore DFIR</a>
+    <!-- Right Hemisphere (Creative/Other) -->
+    <a href="{{ site.baseurl }}/category/other-interests/" class="brain-link">
+      <path class="brain-hemisphere right-hemisphere" d="
+        M 250 60
+        L 250 330
+        C 255 343, 270 352, 290 355
+        C 330 360, 370 358, 400 340
+        C 425 325, 442 300, 445 265
+        C 450 215, 440 165, 415 125
+        C 390 85, 330 60, 250 60
+        Z
+      ">
+        <title>🎨 Other Interests - Click to explore</title>
+      </path>
+    </a>
+
+    <!-- Brain details/folds -->
+    <path class="brain-details" d="
+      M 130 140 Q 145 130, 160 140 T 190 140
+      M 115 180 Q 135 170, 155 180 T 195 180
+      M 110 220 Q 130 210, 150 220 T 190 220
+      M 120 260 Q 140 250, 160 260 T 200 260
+      
+      M 370 140 Q 355 130, 340 140 T 310 140
+      M 385 180 Q 365 170, 345 180 T 305 180
+      M 390 220 Q 370 210, 350 220 T 310 220
+      M 380 260 Q 360 250, 340 260 T 300 260
+    " fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="2.5"/>
+
+    <!-- Central division line -->
+    <line x1="250" y1="60" x2="250" y2="330" 
+          stroke="rgba(255,255,255,0.4)" 
+          stroke-width="3" 
+          stroke-dasharray="8,6"/>
+  </svg>
+
+  <div class="brain-content">
+    <div class="hemisphere-content left-side">
+      <h2>💻 DFIR Journey</h2>
+      <p>Posts about my career, learning, and DFIR experiments.</p>
+      <a class="button" href="{{ site.baseurl }}/category/DFIR/">Explore DFIR</a>
+    </div>
+    
+    <div class="hemisphere-content right-side">
+      <h2>🎨 Other Interests</h2>
+      <p>Posts about hobbies, niche topics, and fun explorations.</p>
+      <a class="button" href="{{ site.baseurl }}/category/other-interests/">Explore</a>
+    </div>
   </div>
-
-  <div class="option">
-    <h2>🎨 Other Interests</h2>
-    <p>Posts about hobbies, niche topics, and fun explorations.</p>
-    <a class="button" href="{{ site.baseurl }}/category/other-interests/">Explore Other Interests</a>
-  </div>
-
 </div>
