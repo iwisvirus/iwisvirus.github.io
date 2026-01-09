@@ -5,6 +5,24 @@ permalink: /about/
 ---
 
 <style>
+  .aligned > div {
+  display: grid;
+  grid-template-columns: 160px 20px auto;
+  margin-bottom: 6px;
+}
+
+.key {
+  text-align: right;
+  color: #9ca3af;
+}
+
+.sep {
+  text-align: center;
+}
+
+.val {
+  color: #e5e7eb;
+}
   .terminal {
     background: #0b0f14;
     color: #d1d5db;
@@ -74,14 +92,14 @@ permalink: /about/
     $cat about.txt
   </div>
 
-<div class="terminal-line info-grid">
-  <span class="label">Name</span><span class="colon">:</span><span class="value">Iris (Hyelim) Myung</span>
-  <span class="label">Education</span><span class="colon">:</span><span class="value">University of Toronto</span>
-  <span class="label">Degree</span><span class="colon">:</span><span class="value">Computer Science Major, Mathematics & Statistics Minor</span>
-  <span class="label">Career goals</span><span class="colon">:</span><span class="value">Work for the government in crime scenes with DFIR</span>
-  <span class="label">Other goals</span><span class="colon">:</span><span class="value">
+<div class="terminal-line aligned">
+  <div><span class="key">Name</span><span class="sep">:</span><span class="val">Iris (Hyelim) Myung</span></div>
+  <div><span class="key">Education</span><span class="sep">:</span><span class="val">University of Toronto</span></div>
+  <div><span class="key">Degree</span><span class="sep">:</span><span class="val">Computer Science Major, Mathematics & Statistics Minor</span></div>
+  <div><span class="key">Career goals</span><span class="sep">:</span><span class="val">Work for the government in crime scenes with DFIR</span></div>
+  <div><span class="key">Other goals</span><span class="sep">:</span><span class="val">
     Getting Permanent Residency in Canada, Building my own house,
     Holding a small concert, Ballroom dancing competition
-  </span>
+  </span></div>
 </div>
 
