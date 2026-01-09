@@ -71,14 +71,17 @@ permalink: /about/
 <div class="terminal">
   <div class="terminal-header">
     $cd human/iris/basic_info<br>
-    $ cat about.txt
+    $cat about.txt
   </div>
 
-  <div class="terminal-line">
-    >  Name         : Iris(Hyelim) Myung <br>
-    >  Education    : University of Toronto <br>
-    >  Degree       : Computer Science Major, Mathematics & Statistics Minor <br>
-    >  Career goals : Work for the government in crime scenes with DFIR <br>
-    >  Other goals  : Getting Permanent Residencey in Canada, Building my own house, Holding a small <br>                          concert, Ballroom dancing competition
-
+<div class="terminal-line info-grid">
+  <span class="label">Name</span><span class="colon">:</span><span class="value">Iris (Hyelim) Myung</span>
+  <span class="label">Education</span><span class="colon">:</span><span class="value">University of Toronto</span>
+  <span class="label">Degree</span><span class="colon">:</span><span class="value">Computer Science Major, Mathematics & Statistics Minor</span>
+  <span class="label">Career goals</span><span class="colon">:</span><span class="value">Work for the government in crime scenes with DFIR</span>
+  <span class="label">Other goals</span><span class="colon">:</span><span class="value">
+    Getting Permanent Residency in Canada, Building my own house,
+    Holding a small concert, Ballroom dancing competition
+  </span>
 </div>
+
