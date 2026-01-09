@@ -69,7 +69,7 @@ title: Welcome
 
 <div class="terminal">
   <div class="terminal-header">
-    $mount brain
+    $mount brain<br>
     $open iris_mind
   </div>
 
@@ -78,7 +78,9 @@ title: Welcome
   </div>
 
   <div class="terminal-line">
-    > Do you want to get to know me? (yes / no)
+    > Welcome. What would you like to explore?
+    > [1] DFIR journey
+    > [2] Everything else in my brain
   </div>
 
   <div class="input-line">
@@ -99,7 +101,7 @@ title: Welcome
       const value = input.value.trim().toLowerCase();
       input.value = "";
 
-      if (value === "yes" || value === "y") {
+      if (value === "1" || value === "[1]") {
         output.innerHTML += `
           <div class="terminal-line">> Access granted.</div>
           <div class="terminal-line hint">Redirecting to DFIR Journey...</div>
@@ -108,10 +110,10 @@ title: Welcome
           window.location.href = "{{ site.baseurl }}/category/DFIR/";
         }, 1200);
 
-      } else if (value === "no" || value === "n") {
+      } else if (value === "2" || value === "[2]") {
         output.innerHTML += `
-          <div class="terminal-line">> Fair enough.</div>
-          <div class="terminal-line hint">Redirecting to Other Adventures...</div>
+          <div class="terminal-line">> Access granted.</div>
+          <div class="terminal-line hint">Redirecting to everything else...</div>
         `;
         setTimeout(() => {
           window.location.href = "{{ site.baseurl }}/category/other-interests/";
