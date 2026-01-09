@@ -70,19 +70,19 @@ permalink: /Contact/
 
 <div class="terminal">
   <div class="terminal-header">
-    $cd human/iris/brain<br>
+    $cd human/iris/contact<br>
   </div>
 
   <div class="terminal-line">
-    > Analyzing...
+    > Secure channel established.
   </div>
 
   <div class="terminal-line">
-    > Welcome. <br>
-    > What would you like to explore?<br>
-    <br>
-       [1] DFIR journey<br>
-       [2] Creative chaos
+    $ cat contact.info <br>
+    > Email     : iris.myung00@gmail.com
+    > GitHub    : iwisvirus
+    > Instagram : irizzler__
+    > LinkedIn  : irismyung
   </div>
 
   <div class="input-line">
