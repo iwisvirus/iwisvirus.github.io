@@ -4,8 +4,6 @@ title: About
 permalink: /about/
 ---
 
-Hi, I'm Iris(Hyelim) Myung. I was born in South Korea and came to Canada in grade 10 by myself. I graduated University of Toronto in 2024 with a Computer Science Major and Mathematics and Statistics Minor. I am currently working on pursuing a career in DFIR and getting my Permanent Residency in Canada. 
-
 <style>
   .terminal {
     background: #0b0f14;
@@ -70,21 +68,32 @@ Hi, I'm Iris(Hyelim) Myung. I was born in South Korea and came to Canada in grad
   }
 </style>
 
+$ whoami
+> Iris Myung
+> Software Developer | DFIR-focused | Curious by design
+
+$ cat about.txt
+> I’m a software developer with experience in Java, cloud systems,
+> and data-driven projects. I’m transitioning into Digital Forensics
+> and Cybersecurity with a long-term goal of government work.
+
 <div class="terminal">
   <div class="terminal-header">
-    $cd human/iris/brain<br>
+    $cd whoami<br>
   </div>
 
   <div class="terminal-line">
-    > Analyzing...
+    > Iris Myung
+    > DFIR
   </div>
 
   <div class="terminal-line">
-    > Welcome. <br>
-    > What would you like to explore?<br>
-    <br>
-       [1] DFIR journey<br>
-       [2] Creative chaos
+    $ cat about.txt
+    >  I was born in South Korea and came to Canada in grade 10. 
+    >  I graduated University of Toronto in 2024 with a Computer Science 
+    >  Major and Mathematics and Statistics Minor. I am currently working on 
+    >  pursuing a career in DFIR hoping to work in the government for the future.
+    >  I am also studying French for my Permanent Residency in Canada.
   </div>
 
   <div class="input-line">
