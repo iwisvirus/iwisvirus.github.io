@@ -2,10 +2,16 @@
 layout: default
 title: Home
 ---
+
 <style>
+  h1 {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
   .brain-container {
     position: relative;
-    max-width: 900px;
+    max-width: 1400px;
     width: 100%;
     margin: 0 auto;
   }
@@ -13,25 +19,24 @@ title: Home
   .brain-svg {
     width: 100%;
     height: auto;
-    filter: drop-shadow(0 10px 30px rgba(0,0,0,0.3));
+    transform: scale(1.25);
+    transform-origin: center;
+    filter: drop-shadow(0 25px 60px rgba(0,0,0,0.35));
   }
 
   .brain-hemisphere {
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: transform 0.3s ease, filter 0.3s ease;
   }
 
   .brain-hemisphere:hover {
-    opacity: 0.9;
-    filter: brightness(1.15);
+    transform: scale(1.03);
+    filter: brightness(1.15) drop-shadow(0 0 25px rgba(255,255,255,0.25));
   }
 
   .brain-content {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    inset: 0;
     display: flex;
     pointer-events: none;
   }
@@ -39,149 +44,115 @@ title: Home
   .hemisphere-content {
     flex: 1;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 40px 20px;
   }
 
   .hemisphere-content h2 {
     color: white;
-    font-size: 1.6em;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
-    text-align: center;
-    margin: 0;
+    font-size: 2rem;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.6);
     font-weight: 600;
   }
 
   @media (max-width: 768px) {
     .hemisphere-content h2 {
-      font-size: 1.2em;
+      font-size: 1.4rem;
     }
-  }
-
-  @media (max-width: 480px) {
-    .hemisphere-content h2 {
-      font-size: 1em;
+    .brain-svg {
+      transform: scale(1.1);
     }
   }
 </style>
 
-<h1>Hey, take a peek into my brain!</h1>
+<h1>Hey, take a peek into my brain 🧠</h1>
 
 <div class="brain-container">
-  <svg class="brain-svg" viewBox="0 0 500 400" xmlns="http://www.w3.org/2000/svg">
+  <svg class="brain-svg" viewBox="0 0 500 420" xmlns="http://www.w3.org/2000/svg">
+
     <defs>
-      <radialGradient id="leftGradient" cx="30%" cy="40%">
-        <stop offset="0%" style="stop-color:#6bc5ff;stop-opacity:1" />
-        <stop offset="100%" style="stop-color:#3a9fd9;stop-opacity:1" />
+      <!-- Realistic gradients -->
+      <radialGradient id="leftGradient" cx="35%" cy="35%">
+        <stop offset="0%" stop-color="#9ad9ff"/>
+        <stop offset="55%" stop-color="#5bb8f0"/>
+        <stop offset="100%" stop-color="#2f7fb3"/>
       </radialGradient>
-      <radialGradient id="rightGradient" cx="70%" cy="40%">
-        <stop offset="0%" style="stop-color:#ff8fb5;stop-opacity:1" />
-        <stop offset="100%" style="stop-color:#d96591;stop-opacity:1" />
+
+      <radialGradient id="rightGradient" cx="65%" cy="35%">
+        <stop offset="0%" stop-color="#ffb3cc"/>
+        <stop offset="55%" stop-color="#f07aa8"/>
+        <stop offset="100%" stop-color="#b84f76"/>
       </radialGradient>
+
+      <!-- Organic distortion -->
+      <filter id="organicNoise">
+        <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="2" seed="2"/>
+        <feDisplacementMap in="SourceGraphic" scale="3"/>
+      </filter>
     </defs>
-    
-    <!-- Left Hemisphere (Logical/DFIR) -->
-    <a href="{{ site.baseurl }}/category/DFIR/" class="brain-link">
-      <path class="brain-hemisphere" d="
-        M 250 40
-        C 240 35, 220 30, 200 30
-        C 160 30, 120 40, 90 60
-        C 70 75, 55 95, 45 120
-        C 35 145, 30 175, 30 205
-        C 30 240, 35 270, 45 295
-        C 50 310, 58 325, 70 338
-        C 85 355, 105 368, 130 375
-        C 155 382, 185 385, 215 380
-        C 230 378, 242 372, 250 365
-        C 250 350, 250 300, 250 250
-        L 250 40
-        Z
-      " fill="url(#leftGradient)">
-        <title>💻 DFIR Journey - Click to explore</title>
+
+    <!-- LEFT / DFIR -->
+    <a href="{{ site.baseurl }}/category/DFIR/">
+      <path class="brain-hemisphere"
+        filter="url(#organicNoise)"
+        d="
+        M 250 35
+        C 235 30, 210 25, 190 25
+        C 145 25, 105 40, 70 65
+        C 45 85, 30 110, 25 145
+        C 20 175, 20 210, 25 245
+        C 30 280, 45 315, 70 340
+        C 95 365, 130 385, 175 390
+        C 205 395, 235 385, 250 370
+        L 250 35
+        Z"
+        fill="url(#leftGradient)">
+        <title>💻 DFIR Journey</title>
       </path>
     </a>
 
-    <!-- Right Hemisphere (Creative/Other) -->
-    <a href="{{ site.baseurl }}/category/other-interests/" class="brain-link">
-      <path class="brain-hemisphere" d="
-        M 250 40
-        L 250 250
-        C 250 300, 250 350, 250 365
-        C 258 372, 270 378, 285 380
-        C 315 385, 345 382, 370 375
-        C 395 368, 415 355, 430 338
-        C 442 325, 450 310, 455 295
-        C 465 270, 470 240, 470 205
-        C 470 175, 465 145, 455 120
-        C 445 95, 430 75, 410 60
-        C 380 40, 340 30, 300 30
-        C 280 30, 260 35, 250 40
-        Z
-      " fill="url(#rightGradient)">
-        <title>🎨 Other Interests - Click to explore</title>
+    <!-- RIGHT / OTHER -->
+    <a href="{{ site.baseurl }}/category/other-interests/">
+      <path class="brain-hemisphere"
+        filter="url(#organicNoise)"
+        transform="translate(4,-3)"
+        d="
+        M 250 35
+        C 265 30, 290 25, 310 25
+        C 355 25, 395 40, 430 65
+        C 455 85, 470 110, 475 145
+        C 480 175, 480 210, 475 245
+        C 470 280, 455 315, 430 340
+        C 405 365, 370 385, 325 390
+        C 295 395, 265 385, 250 370
+        L 250 35
+        Z"
+        fill="url(#rightGradient)">
+        <title>🎨 Other Adventures</title>
       </path>
     </a>
 
-    <!-- Detailed brain folds and grooves - Left side -->
-    <g opacity="0.3">
-      <!-- Frontal lobe folds -->
-      <path d="M 90 100 Q 100 90, 110 95 Q 120 100, 130 95 Q 140 90, 150 100" 
-            fill="none" stroke="white" stroke-width="3"/>
-      <path d="M 85 125 Q 95 115, 105 120 Q 115 125, 125 120 Q 135 115, 145 125" 
-            fill="none" stroke="white" stroke-width="3"/>
-      
-      <!-- Parietal lobe folds -->
-      <path d="M 75 160 Q 90 150, 105 155 Q 120 160, 135 155 Q 150 150, 165 160" 
-            fill="none" stroke="white" stroke-width="3"/>
-      <path d="M 70 190 Q 85 180, 100 185 Q 115 190, 130 185 Q 145 180, 160 190" 
-            fill="none" stroke="white" stroke-width="3"/>
-      
-      <!-- Temporal lobe folds -->
-      <path d="M 75 225 Q 90 215, 105 220 Q 120 225, 135 220 Q 150 215, 165 225" 
-            fill="none" stroke="white" stroke-width="3"/>
-      <path d="M 80 255 Q 95 245, 110 250 Q 125 255, 140 250 Q 155 245, 170 255" 
-            fill="none" stroke="white" stroke-width="3"/>
-      
-      <!-- Occipital lobe folds -->
-      <path d="M 90 290 Q 105 280, 120 285 Q 135 290, 150 285 Q 165 280, 180 290" 
-            fill="none" stroke="white" stroke-width="3"/>
-      <path d="M 100 315 Q 115 305, 130 310 Q 145 315, 160 310 Q 175 305, 190 315" 
-            fill="none" stroke="white" stroke-width="3"/>
+    <!-- Brain folds -->
+    <g opacity="0.35" stroke="white" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <!-- left -->
+      <path d="M 90 115 Q 120 90, 150 115" stroke-width="3"/>
+      <path d="M 80 155 Q 120 130, 165 155" stroke-width="2.5"/>
+      <path d="M 75 200 Q 120 180, 175 205" stroke-width="3"/>
+      <path d="M 85 245 Q 135 230, 190 255" stroke-width="2.8"/>
+      <path d="M 100 295 Q 155 280, 210 305" stroke-width="2.5"/>
+
+      <!-- right -->
+      <path d="M 410 115 Q 380 90, 350 115" stroke-width="3"/>
+      <path d="M 420 155 Q 380 130, 335 155" stroke-width="2.5"/>
+      <path d="M 425 200 Q 380 180, 325 205" stroke-width="3"/>
+      <path d="M 415 245 Q 365 230, 310 255" stroke-width="2.8"/>
+      <path d="M 400 295 Q 345 280, 290 305" stroke-width="2.5"/>
     </g>
 
-    <!-- Detailed brain folds and grooves - Right side -->
-    <g opacity="0.3">
-      <!-- Frontal lobe folds -->
-      <path d="M 410 100 Q 400 90, 390 95 Q 380 100, 370 95 Q 360 90, 350 100" 
-            fill="none" stroke="white" stroke-width="3"/>
-      <path d="M 415 125 Q 405 115, 395 120 Q 385 125, 375 120 Q 365 115, 355 125" 
-            fill="none" stroke="white" stroke-width="3"/>
-      
-      <!-- Parietal lobe folds -->
-      <path d="M 425 160 Q 410 150, 395 155 Q 380 160, 365 155 Q 350 150, 335 160" 
-            fill="none" stroke="white" stroke-width="3"/>
-      <path d="M 430 190 Q 415 180, 400 185 Q 385 190, 370 185 Q 355 180, 340 190" 
-            fill="none" stroke="white" stroke-width="3"/>
-      
-      <!-- Temporal lobe folds -->
-      <path d="M 425 225 Q 410 215, 395 220 Q 380 225, 365 220 Q 350 215, 335 225" 
-            fill="none" stroke="white" stroke-width="3"/>
-      <path d="M 420 255 Q 405 245, 390 250 Q 375 255, 360 250 Q 345 245, 330 255" 
-            fill="none" stroke="white" stroke-width="3"/>
-      
-      <!-- Occipital lobe folds -->
-      <path d="M 410 290 Q 395 280, 380 285 Q 365 290, 350 285 Q 335 280, 320 290" 
-            fill="none" stroke="white" stroke-width="3"/>
-      <path d="M 400 315 Q 385 305, 370 310 Q 355 315, 340 310 Q 325 305, 310 315" 
-            fill="none" stroke="white" stroke-width="3"/>
-    </g>
-
-    <!-- Central division line (corpus callosum) -->
-    <line x1="250" y1="40" x2="250" y2="365" 
-          stroke="rgba(255,255,255,0.5)" 
-          stroke-width="3" 
+    <!-- Center divide -->
+    <line x1="250" y1="35" x2="250" y2="380"
+          stroke="rgba(255,255,255,0.5)"
+          stroke-width="3"
           stroke-dasharray="10,8"/>
   </svg>
 
@@ -189,7 +160,6 @@ title: Home
     <div class="hemisphere-content">
       <h2>💻 DFIR Journey</h2>
     </div>
-    
     <div class="hemisphere-content">
       <h2>🎨 Other Adventures</h2>
     </div>
