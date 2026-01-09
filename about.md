@@ -12,7 +12,7 @@ permalink: /about/
 }
 
 .key {
-  text-align: right;
+  text-align: left;
   color: #9ca3af;
 }
 
