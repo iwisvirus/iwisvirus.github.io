@@ -71,16 +71,9 @@ permalink: /contact/
 <div class="terminal">
   <div class="terminal-header">
     $cd human/iris/contact<br>
-  </div>
-
-  <div class="terminal-line">
-    > Secure channel established.
-  </div>
-
-  <div class="terminal-header">
     $cat contact.info <br>
   </div>
-  
+
   <div class="terminal-line">
     > Email     : iris.myung00@gmail.com <br>
     > GitHub    : iwisvirus <br>
