@@ -355,24 +355,7 @@ footer {
   padding: 20px 0;
   text-align: center;
 }
-.info-grid {
-  display: grid;
-  grid-template-columns: 140px 20px auto;
-  row-gap: 10px;
-}
 
-.label {
-  text-align: right;
-  color: #9ca3af;
-}
-
-.colon {
-  text-align: center;
-}
-
-.value {
-  color: #e5e7eb;
-}
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
