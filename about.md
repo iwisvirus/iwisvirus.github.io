@@ -70,25 +70,15 @@ permalink: /about/
 
 <div class="terminal">
   <div class="terminal-header">
-    $cd whoami<br>
+    $cd human/iris/basic_info<br>
+    $ cat about.txt
   </div>
 
   <div class="terminal-line">
-    > Iris Myung <br>
-    > DFIR
-  </div>
-  
-  <div class="terminal-header">
-    $ cat about.txt
-  </div>  
-  
-  <div class="terminal-line">
-    >  I was born in South Korea and came to Canada in grade 10. <br>
-    >  I graduated University of Toronto in 2024 with a Computer Science <br>
-    >  Major and Mathematics and Statistics Minor. I am currently working on <br>
-    >  pursuing a career in DFIR hoping to work in the government for the future.<br>
-    >  I am also studying French for my Permanent Residency in Canada.
-  </div>
+    >  Name         : Iris(Hyelim) Myung <br>
+    >  Education    : University of Toronto (Computer Science Major, Mathematics/Statistics Minor) <br>
+    >  Career goals : Work for the government in crime scenes with DFIR <br>
+    >  Other goals  : Getting Permanent Residencey in Canada, Building my own house, Holding a small <br>                          concert, Ballroom dancing competition
 
   <div class="input-line">
     <span class="prompt">$</span>
