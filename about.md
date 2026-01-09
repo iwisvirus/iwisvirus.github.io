@@ -76,7 +76,8 @@ permalink: /about/
 
   <div class="terminal-line">
     >  Name         : Iris(Hyelim) Myung <br>
-    >  Education    : University of Toronto (Computer Science Major, Mathematics/Statistics Minor) <br>
+    >  Education    : University of Toronto <br>
+    >  Degree       : Computer Science Major, Mathematics & Statistics Minor <br>
     >  Career goals : Work for the government in crime scenes with DFIR <br>
     >  Other goals  : Getting Permanent Residencey in Canada, Building my own house, Holding a small <br>                          concert, Ballroom dancing competition
 
