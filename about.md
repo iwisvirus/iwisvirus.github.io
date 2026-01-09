@@ -8,5 +8,4 @@ Hi, I'm Iris(Hyelim) Myung. I was born in South Korea and came to Canada in grad
 
 
 ### Contact me
-+1 647-289-4575
 [iris.myung00@gmail.com](mailto:iris.myung00@gmail.com)
