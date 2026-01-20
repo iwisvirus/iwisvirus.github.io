@@ -29,7 +29,7 @@ __PLUGINS__
 **pslist**: get list of processes from the doubly-linked list that keeps track of processes in memory, equivalent to the process list in task manager. include all current processes and terminated process with their exit time 
 - python3 vol.py -f <file> windows.pslist
 
-**psscan**: locate processes by finding data structures that match _EPROCESS. It can cause false positives. 
+**psscan**: locate processes by finding data structures that match _EPROCESS. It can cause false positives. good to detect unlinked malwares that doesn't show up on pslist
 - python3 vol.py -f <file> windows.psscan
 
 **pstree**: list all processes based on their parent process ID, using the same methods as pslist. Useful to get a full story of the processes and what may have been occurring at the time of extraction 
@@ -76,15 +76,10 @@ __PLUGINS__
 
 ![PDF Info Screenshot]({{ site.baseurl }}/images/image1_intro.jpg)
 
-Then I tested it on a pdf that I already have on my computer. It was interesting to see that they know it’s written on LaTex. 
-
-![PDF Info Screenshot]({{ site.baseurl }}/images/intro2.png)
 
 
-We can also retrieve information about a jpg using “exiftool” command. Some interesting thing I noticed is that you can see what the picture was taken with, if the flash was on or off, exposure time, and file permission. 
 
-![PDF Info Screenshot]({{ site.baseurl }}/images/intro3.png)
 
-I also tested it on a jpg image I have on my computer. 
 
-![PDF Info Screenshot]({{ site.baseurl }}/images/intro4.png)
+
+
