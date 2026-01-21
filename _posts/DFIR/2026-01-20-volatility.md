@@ -70,11 +70,100 @@ __PLUGINS__
 **modscan, driverirp, callbacks, idt, apihooks, moddump, handles**
 
 
+These are some practical investigations using what I've learned. 
+**1. What is the build version of the host machine in Case001? (2600.xpsp.080413-2111)** <br>
 
+For this task, I used 
+**python3 vol.py -f <file> windows.info**
+![PDF Info Screenshot]({{ site.baseurl }}/images/vol1.jpg)
 
+**2. At what time was the memory file acquired in Case 001?(2012-07-22 02:45:08)** <br>
 
+For this task, I used 
+**python3 vol.py -f <file> windows.info**
+![PDF Info Screenshot]({{ site.baseurl }}/images/vol2.jpg)
 
-![PDF Info Screenshot]({{ site.baseurl }}/images/image1_intro.jpg)
+**3.What process can be considered suspicious in Case 001?(reader_sl.exe)** <br> 
+
+For this task, I used
+**python3 vol.py -f <file> windows.psscan**
+![PDF Info Screenshot]({{ site.baseurl }}/images/vol3.jpg)
+
+**4.What is the parent process of the suspicious process in Case 001?(explorer.exe)** <br>
+
+For this task, I used
+**python3 vol.py -f <file> windows.pstree**
+![PDF Info Screenshot]({{ site.baseurl }}/images/vol4.jpg)
+
+**5.What is the PID of the suspicious process in Case 001?(1640)** <br>
+
+For this task, I used
+**python3 vol.py -f <file> windows.cmd**
+
+**6.What is the parent process PID in Case 001?(1484)**
+
+For this task, I used
+**python3 vol.py -f <file> windows.cmd**
+
+**7.What user-agent was employed by the adversary in Case 001?(Mozilla/5.0(Windows;U;MSIE 7.0;Windows NT 6.0; en-US))**
+
+For this task, I used 
+**python3 vol.py -f <file> -o <file to save> windows.memmap.Memmap --pid 1640 --dump**
+![PDF Info Screenshot]({{ site.baseurl }}/images/vol5.jpg)
+
+then, 
+
+**python3 vol.py -f <file>/*.dmp | grep -i "user-agent"**
+![PDF Info Screenshot]({{ site.baseurl }}/images/vol6.jpg)
+
+**8.Was Chase Bank one of the suspicious bank domains found in Case 001? (Y/N) (Y)**
+
+For this task, I used
+**python3 vol.py -f <file>/*.dmp | grep -i "chase"**
+![PDF Info Screenshot]({{ site.baseurl }}/images/vol7.jpg)
+
+**9.What suspicious process is running at PID 740 in Case 002?(@WanaDecryptor@)**
+
+For this task, I used
+**python3 vol.py -f <file>/ windows.psscan"**
+![PDF Info Screenshot]({{ site.baseurl }}/images/vol8.jpg)
+
+**10.What is the full path of the suspicious binary in PID 740 in Case 002?(C:\Intel\ivecuqmanpnirkt615\@WAnaDecryptor@)**
+
+For this task, I used
+**python3 vol.py -f <file>/*.dmp windows.dlllist | grep 740**
+![PDF Info Screenshot]({{ site.baseurl }}/images/vol9.jpg)
+
+**11.What is the parent process of PID 740 in Case 002?(tasksche.exe)**
+
+For this task, I used
+**python3 vol.py -f <file>/*.dmp windows.pstree**
+![PDF Info Screenshot]({{ site.baseurl }}/images/vol10.jpg)
+
+**12.What is the suspicious parent process PID connected to the decryptor in Case 002?(1940)**
+
+For this task, I used
+**python3 vol.py -f <file>/*.dmp windows.pstree"**
+
+**13.From our current information, what malware is present on the system in Case 002?(Wannacry)**
+
+I had to search this up on the internet. 
+
+**14.What DLL is loaded by the decryptor used for socket creation in Case 002?(Ws2_32.dll)**
+
+I had to search this up on the internet. 
+
+**15.What mutex can be found that is a known indicator of the malware in question in Case 002?(MsWinZonesCacheCounterMutexA)**
+
+For this task, I used
+**python3 vol.py -f <file>/*.dmp windows.handles | grep 1940**
+![PDF Info Screenshot]({{ site.baseurl }}/images/vol11.jpg)
+
+**16.What plugin could be used to identify all files loaded from the malware working directory in Case 002?(windows.filescan)**
+
+For this task, I used the help menu. 
+![PDF Info Screenshot]({{ site.baseurl }}/images/vol12.jpg)
+
 
 
 
