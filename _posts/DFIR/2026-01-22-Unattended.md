@@ -62,6 +62,6 @@ I used the Autopsy tool and looked through the web history.
 ![PDF Info Screenshot]({{ site.baseurl }}/images/test9.png)
 
 
-Summary:
+**Summary:**
 
-Finding what I need inside the tool is quite easy. The tricky part for me was choosing the right tool for each task. I might have to review on that to know exactly what tool I need to solve a problem. 
+Finding what I need inside the tool is quite easy. The tricky part for me was choosing the right tool for each task. I will be reviewing on what exact tool I need to solve a problem but also, do more hands on practices. 
