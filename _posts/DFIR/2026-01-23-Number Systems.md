@@ -18,6 +18,7 @@ Today, I learned number systems and timestamps.
 
 **American Standard Code for Information Interchange**
 
+
 **Epoch time and timestamps**
 
 **Data stored in memory**
