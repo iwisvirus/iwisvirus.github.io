@@ -14,11 +14,18 @@
 
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
   </head>
-<script>
-  function closeDisclaimer() {
-    document.getElementById("disclaimerBox").style.display = "none";
-  }
-</script>
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const closeBtn = document.getElementById("closeDisclaimer");
+    const disclaimer = document.getElementById("disclaimerBox");
+
+    if (closeBtn && disclaimer) {
+      closeBtn.addEventListener("click", function () {
+        disclaimer.style.display = "none";
+      });
+    }
+  });
+  </script>
   <body>
     <div class="wrapper-masthead">
       <div class="container">
