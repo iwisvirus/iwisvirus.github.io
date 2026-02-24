@@ -252,14 +252,28 @@ nav {
 }
 
 .disclaimer {
+  position: relative;
   background-color: #ffe6e6;
   border: 2px solid #cc0000;
   color: #990000;
-  padding: 18px;
+  padding: 18px 40px 18px 18px;
   margin-bottom: 30px;
   font-size: 0.95rem;
   border-radius: 8px;
   font-weight: 500;
+}
+
+.close-btn {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  font-size: 22px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  opacity: 0.6;
 }
 
 .post {
