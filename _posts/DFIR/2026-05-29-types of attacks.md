@@ -1,7 +1,7 @@
 ---
 layout: post
 title: PCE | Types of Attacks
-date: 2026-05-26
+date: 2026-05-29
 categories: DFIR
 ---
 
