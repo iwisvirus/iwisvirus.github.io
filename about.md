@@ -96,7 +96,7 @@ permalink: /about/
   <div><span class="key">Name</span><span class="sep">:</span><span class="val">Iris (Hyelim) Myung</span></div>
   <div><span class="key">Education</span><span class="sep">:</span><span class="val">University of Toronto</span></div>
   <div><span class="key">Degree</span><span class="sep">:</span><span class="val">Computer Science Major, Mathematics & Statistics Minor</span></div>
-  <div><span class="key">Career goals</span><span class="sep">:</span><span class="val">Work for the government in crime scenes with DFIR</span></div>
+  <div><span class="key">Career goals</span><span class="sep">:</span><span class="val">Be the top digital forensics examiner and develop tools for them.</span></div>
   <div><span class="key">Other goals</span><span class="sep">:</span><span class="val">
     Getting Permanent Residency in Canada, Building my own house,
     Holding a small concert, Ballroom dancing competition
