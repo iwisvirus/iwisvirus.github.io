@@ -8,32 +8,42 @@ title: Welcome
     background: #0b0f14;
     color: #d1d5db;
     font-family: "Courier New", monospace;
-    padding: 40px;
+    padding: 36px;
     border-radius: 12px;
-    box-shadow: 0 20px 60px rgba(0,0,0,0.6);
-    max-width: 800px;
-    margin: 60px auto;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.7), 0 0 0 1px #1e2530;
+    max-width: 820px;
+    margin: 40px auto;
   }
 
-  .terminal-header {
-    color: #9ca3af;
+  .terminal-bar {
+    display: flex;
+    align-items: center;
+    gap: 6px;
     margin-bottom: 20px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid #1e2530;
   }
 
-  .terminal-line {
-    margin: 10px 0;
-  }
+  .dot { width: 12px; height: 12px; border-radius: 50%; }
+  .dot-red { background: #ef4444; }
+  .dot-yellow { background: #f59e0b; }
+  .dot-green { background: #22c55e; }
+  .tab-title { margin-left: 10px; color: #6b7280; font-size: 0.82rem; }
 
-  .prompt {
-    color: #22c55e;
-  }
+  .terminal-header { color: #9ca3af; margin-bottom: 20px; }
+
+  .terminal-line { margin: 8px 0; }
+
+  .prompt { color: #22c55e; }
+  .cmd { color: #e5e7eb; }
 
   .input-line {
     display: flex;
     align-items: center;
+    margin-top: 14px;
   }
 
-  input {
+  #terminalInput {
     background: transparent;
     border: none;
     color: #e5e7eb;
@@ -42,51 +52,53 @@ title: Welcome
     outline: none;
     margin-left: 8px;
     width: 100%;
+    caret-color: transparent;
   }
 
   .cursor {
     display: inline-block;
-    width: 10px;
-    height: 18px;
+    width: 9px;
+    height: 16px;
     background: #22c55e;
-    margin-left: 4px;
+    margin-left: 2px;
     animation: blink 1s infinite;
+    flex-shrink: 0;
   }
 
-  @keyframes blink {
-    50% { opacity: 0; }
-  }
+  @keyframes blink { 50% { opacity: 0; } }
 
-  .error {
-    color: #ef4444;
-  }
+  .error { color: #ef4444; }
+  .hint { color: #60a5fa; }
+  .success { color: #22c55e; }
+  .muted { color: #6b7280; }
 
-  .hint {
-    color: #60a5fa;
-    font-size: 0.9rem;
-  }
+  #terminalOutput .terminal-line { margin: 5px 0; }
 </style>
 
 <div class="terminal">
+  <div class="terminal-bar">
+    <span class="dot dot-red"></span>
+    <span class="dot dot-yellow"></span>
+    <span class="dot dot-green"></span>
+    <span class="tab-title">iris@brain ~ bash</span>
+  </div>
+
   <div class="terminal-header">
-    $cd human/iris/brain<br>
+    <span class="prompt">iris@brain</span><span class="muted">:</span><span class="hint">~</span><span class="muted">$</span> <span class="cmd">cd human/iris/brain</span><br>
+    <span class="prompt">iris@brain</span><span class="muted">:</span><span class="hint">~/human/iris/brain</span><span class="muted">$</span> <span class="cmd">./welcome.sh</span>
   </div>
 
-  <div class="terminal-line">
-    > Analyzing...
-  </div>
-
-  <div class="terminal-line">
-    > Welcome. <br>
-    > What would you like to explore?<br>
-    <br>
-       [1] DFIR journey<br>
-       [2] Creative chaos
-  </div>
+  <div class="terminal-line success">> Initializing...</div>
+  <div class="terminal-line">> Welcome. I'm not that boring...</div>
+  <div class="terminal-line">> What would you like to explore?</div>
+  <div class="terminal-line">&nbsp;</div>
+  <div class="terminal-line muted">   [1] dfir       — Digital Forensics &amp; Incident Response journey</div>
+  <div class="terminal-line muted">   [2] chaos      — Creative chaos &amp; other interests</div>
+  <div class="terminal-line muted">   [help]         — show all available commands</div>
 
   <div class="input-line">
     <span class="prompt">$</span>
-    <input id="terminalInput" type="text" autofocus />
+    <input id="terminalInput" type="text" autofocus autocomplete="off" spellcheck="false" />
     <span class="cursor"></span>
   </div>
 
@@ -97,38 +109,66 @@ title: Welcome
   const input = document.getElementById("terminalInput");
   const output = document.getElementById("terminalOutput");
 
+  const commands = {
+    "1": () => redirect("Redirecting to DFIR Journey...", "{{ site.baseurl }}/category/DFIR/"),
+    "dfir": () => redirect("Redirecting to DFIR Journey...", "{{ site.baseurl }}/category/DFIR/"),
+    "2": () => redirect("Redirecting to Creative Chaos...", "{{ site.baseurl }}/category/other-interests/"),
+    "chaos": () => redirect("Redirecting to Creative Chaos...", "{{ site.baseurl }}/category/other-interests/"),
+    "help": () => `
+      <div class="terminal-line hint">> Available commands:</div>
+      <div class="terminal-line muted">&nbsp; 1 / dfir      — DFIR journey</div>
+      <div class="terminal-line muted">&nbsp; 2 / chaos     — Creative chaos</div>
+      <div class="terminal-line muted">&nbsp; whoami        — who is iris?</div>
+      <div class="terminal-line muted">&nbsp; ls            — list sections</div>
+      <div class="terminal-line muted">&nbsp; about         — go to about page</div>
+      <div class="terminal-line muted">&nbsp; contact       — go to contact page</div>
+      <div class="terminal-line muted">&nbsp; clear         — clear terminal</div>
+    `,
+    "whoami": () => `
+      <div class="terminal-line success">> iris (hyelim) myung</div>
+      <div class="terminal-line muted">&nbsp; university of toronto — cs, math &amp; stats</div>
+      <div class="terminal-line muted">&nbsp; future: top dfir examiner &amp; tool builder</div>
+      <div class="terminal-line muted">&nbsp; also: bartender, gym rat, philosophy enjoyer</div>
+    `,
+    "ls": () => `
+      <div class="terminal-line success">> sections/</div>
+      <div class="terminal-line muted">&nbsp; dfir/         — forensics write-ups &amp; learning</div>
+      <div class="terminal-line muted">&nbsp; chaos/        — curious minds &amp; interests</div>
+      <div class="terminal-line muted">&nbsp; about/        — basic_info.txt</div>
+      <div class="terminal-line muted">&nbsp; contact/      — reach.out</div>
+    `,
+    "about": () => redirect("Loading about.txt...", "{{ site.baseurl }}/about"),
+    "contact": () => redirect("Opening reach.out...", "{{ site.baseurl }}/contact"),
+    "clear": () => { output.innerHTML = ""; return null; },
+  };
+
+  function redirect(msg, url) {
+    return `
+      <div class="terminal-line success">> Access granted.</div>
+      <div class="terminal-line hint">> ${msg}</div>
+      <script>setTimeout(() => { window.location.href = "${url}"; }, 900);<\/script>
+    `;
+  }
+
   input.addEventListener("keydown", function(e) {
-    if (e.key === "Enter") {
-      const value = input.value.trim().toLowerCase();
-      input.value = "";
+    if (e.key !== "Enter") return;
+    const value = input.value.trim().toLowerCase();
+    if (!value) return;
+    input.value = "";
 
-      if (value === "1" || value === "[1]") {
-        output.innerHTML += `
-          <div class="terminal-line">> Access granted.</div>
-          <div class="terminal-line hint">Redirecting to Digital Forensics Journey...</div>
-        `;
-        setTimeout(() => {
-          window.location.href = "{{ site.baseurl }}/category/DFIR/";
-        }, 1200);
+    output.innerHTML += `<div class="terminal-line muted">$ ${value}</div>`;
 
-      } else if (value === "2" || value === "[2]") {
-        output.innerHTML += `
-          <div class="terminal-line">> Access granted.</div>
-          <div class="terminal-line hint">Redirecting to creative chaos...</div>
-        `;
-        setTimeout(() => {
-          window.location.href = "{{ site.baseurl }}/category/other-interests/";
-        }, 1200);
-
-      } else {
-        output.innerHTML += `
-          <div class="terminal-line error">
-            > Command not recognized. Type yes or no.
-          </div>
-        `;
-      }
-
-      output.scrollTop = output.scrollHeight;
+    const fn = commands[value];
+    if (fn) {
+      const result = fn();
+      if (result) output.innerHTML += result;
+    } else {
+      output.innerHTML += `
+        <div class="terminal-line error">> command not found: ${value}</div>
+        <div class="terminal-line muted">   type [help] to see available commands</div>
+      `;
     }
+
+    output.scrollTop = output.scrollHeight;
   });
 </script>

@@ -4,19 +4,22 @@
 //
 
 // Colors
-$blue: #4183C4;
+$blue: #60a5fa;
+$green: #22c55e;
+$red: #ef4444;
 
-// Grays
+// Dark theme palette
 $black: #000;
-$darkerGray: #222;
-$darkGray: #333;
-$gray: #666;
-$lightGray: #eee;
-$white: #fff;
+$darkerGray: #f3f4f6;
+$darkGray: #e5e7eb;
+$gray: #9ca3af;
+$lightGray: #1e2530;
+$white: #0d1117;
 
 // Font stacks
-$helvetica: Helvetica, Arial, sans-serif;
-$helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$mono: "Courier New", "Lucida Console", monospace;
+$helvetica: $mono;
+$helveticaNeue: $mono;
 $georgia: Georgia, serif;
 
 // Mobile breakpoints

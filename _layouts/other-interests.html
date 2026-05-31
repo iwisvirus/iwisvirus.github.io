@@ -1,36 +1,36 @@
 ---
 layout: default
 ---
-<div class="disclaimer" id="disclaimerBox">
-  <span class="close-btn" id="closeDisclaimer">&times;</span>
-  <p>
-    <strong>Disclaimer:</strong> The section of the website is purely personal and
-    does not relate to cybersecurity, digital forensics, or my professional career.
-    It is not intended to judge, criticize, or offend anyone.
-    This section is intended for personal blogging purposes only.
-  </p>
-</div>
-<div class="posts"> 
-  {% assign sorted_categories = site.categories | sort %} 
-  {% for category in sorted_categories %} 
-  
-  {% unless category[0] == "DFIR" %}
-  <h1 class="category-title"> 
-    {{ site.category_names[category[0]] | default: category[0] }} 
-  </h1> 
-  
-  {% assign posts = category[1] | sort: "date" | reverse %} 
-  {% for post in posts %} 
-  <article class="post"> 
-    <h3 class="post-title"> 
-      <a href="{{ site.baseurl }}{{ post.url }}"> {{ post.title }} 
-      </a> 
-    </h3> 
-    <p class="post-date"> {{ post.date | date: "%B %d, %Y" }} 
-    </p> 
-  </article> 
-  {% endfor %}
-  {% endunless %}
-  
-  {% endfor %} 
+
+<div class="section-terminal">
+  <div class="terminal-header">
+    <span style="color:#22c55e">iris@brain</span>:<span style="color:#60a5fa">~/chaos</span>$ ls -lt posts/
+  </div>
+
+  <div class="disclaimer" id="disclaimerBox">
+    <span class="close-btn" id="closeDisclaimer">&times;</span>
+    <p>
+      <strong>Disclaimer:</strong> This section is purely personal and does not relate to
+      cybersecurity, digital forensics, or my professional career. Not intended to judge,
+      criticize, or offend anyone. Personal blogging only.
+    </p>
+  </div>
+
+  <div class="posts">
+    {% assign sorted_categories = site.categories | sort %}
+    {% for category in sorted_categories %}
+      {% unless category[0] == "DFIR" %}
+        <h1 class="category-title">{{ site.category_names[category[0]] | default: category[0] }}</h1>
+        {% assign posts = category[1] | sort: "date" | reverse %}
+        {% for post in posts %}
+          <article class="post">
+            <h3 class="post-title">
+              <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+            </h3>
+            <p class="post-date">{{ post.date | date: "%Y-%m-%d" }}</p>
+          </article>
+        {% endfor %}
+      {% endunless %}
+    {% endfor %}
+  </div>
 </div>
