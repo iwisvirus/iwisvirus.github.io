@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Why Cybersecurity?
+title: Why Digital Forensics?
 date: 2025-08-31
 categories: DFIR
 ---
