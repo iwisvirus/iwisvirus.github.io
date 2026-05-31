@@ -1,10 +1,11 @@
----
 
+---
 layout: post
 title: Why Digital Forensics?
 date: 2025-08-31
 categories: DFIR
-----------------
+---
+
 
 After graduating from the University of Toronto with a Computer Science degree, I was struggling to figure out what I wanted to do. Then I ended up taking Google's cybersecurity course. After the first couple of videos, I knew this was going to be my career. I had never felt so excited to go home and start the next lesson. Every time I learned something new, I wanted to learn even more.
 
