@@ -142,11 +142,13 @@ title: Welcome
     "clear": () => { output.innerHTML = ""; return null; },
   };
 
+  let pendingRedirect = null;
+
   function redirect(msg, url) {
+    pendingRedirect = url;
     return `
       <div class="terminal-line success">> Access granted.</div>
       <div class="terminal-line hint">> ${msg}</div>
-      <script>setTimeout(() => { window.location.href = "${url}"; }, 900);<\/script>
     `;
   }
 
@@ -156,6 +158,7 @@ title: Welcome
     if (!value) return;
     input.value = "";
 
+    pendingRedirect = null;
     output.innerHTML += `<div class="terminal-line muted">$ ${value}</div>`;
 
     const fn = commands[value];
@@ -170,5 +173,10 @@ title: Welcome
     }
 
     output.scrollTop = output.scrollHeight;
+
+    if (pendingRedirect) {
+      const url = pendingRedirect;
+      setTimeout(() => { window.location.href = url; }, 900);
+    }
   });
 </script>
