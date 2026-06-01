@@ -28,12 +28,6 @@ permalink: /art/
     margin-top: 0;
     text-shadow: 0 0 10px rgba(34,197,94,0.2);
   }
-  .art-terminal p.subtitle {
-    color: #6b7280;
-    font-size: 0.85rem;
-    margin-top: -10px;
-    margin-bottom: 28px;
-  }
   .art-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
@@ -58,20 +52,6 @@ permalink: /art/
     aspect-ratio: 1;
     object-fit: cover;
     display: block;
-    border-bottom: 1px solid #1e2530;
-  }
-  .art-card-info {
-    padding: 10px 12px;
-  }
-  .art-card-title {
-    color: #e5e7eb;
-    font-size: 0.82rem;
-    margin: 0 0 2px;
-  }
-  .art-card-meta {
-    color: #6b7280;
-    font-size: 0.75rem;
-    margin: 0;
   }
 
   /* Lightbox */
@@ -110,62 +90,23 @@ permalink: /art/
   </div>
 
   <h1>Art</h1>
-  <p class="subtitle">[ Add a description of your art here ]</p>
 
   <div class="art-grid">
-
     <div class="art-card" onclick="openLightbox('/art/IMG_3698.PNG')">
-      <img src="/art/IMG_3698.PNG" alt="Art piece" loading="lazy">
-      <div class="art-card-info">
-        <p class="art-card-title">[ Title ]</p>
-        <p class="art-card-meta">[ Medium ] · [ Year ]</p>
-      </div>
+      <img src="/art/IMG_3698.PNG" alt="" loading="lazy">
     </div>
-
-    <div class="art-card" onclick="openLightbox('/art/129AFAD5-769D-4FF0-8E8C-17E4B0ADA7C6.JPG')">
-      <img src="/art/129AFAD5-769D-4FF0-8E8C-17E4B0ADA7C6.JPG" alt="Art piece" loading="lazy">
-      <div class="art-card-info">
-        <p class="art-card-title">[ Title ]</p>
-        <p class="art-card-meta">[ Medium ] · [ Year ]</p>
-      </div>
-    </div>
-
-    <div class="art-card" onclick="openLightbox('/art/IMG_0873.jpg')">
-      <img src="/art/IMG_0873.jpg" alt="Art piece" loading="lazy">
-      <div class="art-card-info">
-        <p class="art-card-title">[ Title ]</p>
-        <p class="art-card-meta">[ Medium ] · [ Year ]</p>
-      </div>
-    </div>
-
     <div class="art-card" onclick="openLightbox('/art/IMG_4346.jpg')">
-      <img src="/art/IMG_4346.jpg" alt="Art piece" loading="lazy">
-      <div class="art-card-info">
-        <p class="art-card-title">[ Title ]</p>
-        <p class="art-card-meta">[ Medium ] · [ Year ]</p>
-      </div>
+      <img src="/art/IMG_4346.jpg" alt="" loading="lazy">
     </div>
-
     <div class="art-card" onclick="openLightbox('/art/IMG_2766.JPG')">
-      <img src="/art/IMG_2766.JPG" alt="Art piece" loading="lazy">
-      <div class="art-card-info">
-        <p class="art-card-title">[ Title ]</p>
-        <p class="art-card-meta">[ Medium ] · [ Year ]</p>
-      </div>
+      <img src="/art/IMG_2766.JPG" alt="" loading="lazy">
     </div>
-
     <div class="art-card" onclick="openLightbox('/art/IMG_0089.JPG')">
-      <img src="/art/IMG_0089.JPG" alt="Art piece" loading="lazy">
-      <div class="art-card-info">
-        <p class="art-card-title">[ Title ]</p>
-        <p class="art-card-meta">[ Medium ] · [ Year ]</p>
-      </div>
+      <img src="/art/IMG_0089.JPG" alt="" loading="lazy">
     </div>
-
   </div>
 </div>
 
-<!-- Lightbox -->
 <div class="lightbox" id="lightbox" onclick="closeLightbox()">
   <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
   <img id="lightbox-img" src="" alt="">
