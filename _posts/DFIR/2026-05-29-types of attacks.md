@@ -45,9 +45,12 @@ special
   - surezip
       - at least simultaneously 5 encrypted files 
 
-- attack settings
-- recovery process can be paused, stopped, and resumed
-- recovery process can be saved and exported to be resume on other machines
+other
+  - attack settings
+  - recovery process can be paused, stopped, and resumed
+  - recovery process can be saved and exported to be resume on other machines
+  - transfering progress to another machine
+      - stop pw recovery on initial machine, click save job|export job to a different computer, transfer the passware job file and associated files to another machine, open PWJ file on the JOBS tab 
 
 
 
