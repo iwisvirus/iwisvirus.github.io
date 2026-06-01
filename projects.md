@@ -121,11 +121,12 @@ permalink: /projects/
       <p class="project-meta">2026 &nbsp;·&nbsp; Data Rescue Labs</p>
       <ul class="project-desc">
         <li>Designed and built the company website for Data Rescue Labs, a Toronto-based digital forensics and data recovery firm.</li>
-        <li>[ Add details about what you built — tech stack, features, anything notable ]</li>
+        <li>Built using WordPress with Claude AI assistance for content generation, layout decisions, and copy.</li>
       </ul>
       <div class="project-footer">
         <div class="project-tags">
-          <span class="project-tag">[ Add tags ]</span>
+          <span class="project-tag">WordPress</span>
+          <span class="project-tag">Claude AI</span>
         </div>
         <div class="project-links">
           <a class="project-link" href="https://cellphoneforensics.ca" target="_blank">↗ live site</a>

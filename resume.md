@@ -143,9 +143,6 @@ permalink: /resume/
     <p class="r-role">Google Cybersecurity Certificate</p>
     <p class="r-company">Google</p>
     <p class="r-dates">August 2025</p>
-    <ul>
-      <li>Covered secure system design, risk analysis, incident response, and security practices. <a href="https://github.com/iwisvirus/Google-cybersecurity-certificate" target="_blank" style="color:#60a5fa;">↗ github</a></li>
-    </ul>
   </div>
 
   <p class="r-section">Experience</p>
@@ -255,6 +252,14 @@ permalink: /resume/
   </div>
 
   <p class="r-section">Projects</p>
+  <div class="r-entry">
+    <p class="r-role">Google Cybersecurity Certificate</p>
+    <p class="r-company">Google &nbsp;·&nbsp; <a href="https://github.com/iwisvirus/Google-cybersecurity-certificate" target="_blank" style="color:#60a5fa;">↗ github</a></p>
+    <p class="r-dates">August 2025</p>
+    <ul>
+      <li>Completed hands-on labs covering secure system design, risk analysis, incident response, SIEM tools, and security practices.</li>
+    </ul>
+  </div>
   <div class="r-entry">
     <p class="r-role" style="color:#60a5fa;"><a href="/projects/" style="color:#60a5fa;">→ See full projects page</a></p>
   </div>
