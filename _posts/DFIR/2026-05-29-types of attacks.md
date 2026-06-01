@@ -51,7 +51,3 @@ other
   - recovery process can be saved and exported to be resume on other machines
   - transfering progress to another machine
       - stop pw recovery on initial machine, click save job|export job to a different computer, transfer the passware job file and associated files to another machine, open PWJ file on the JOBS tab 
-
-
-
-![PDF Info Screenshot](/images/pce1.png)
