@@ -207,7 +207,7 @@ permalink: /projects/
         </div>
         <div class="project-links">
           <a class="project-link" href="https://github.com/iwisvirus/STA304" target="_blank">↗ github</a>
-          <a class="project-link" href="/files/sta304.pdf" target="_blank">↗ pdf</a>
+          <a class="project-link" href="/files/STA304%20Assignment%202-%20Group%2024-3%20(1).pdf" target="_blank">↗ pdf</a>
         </div>
       </div>
     </div>
@@ -228,7 +228,7 @@ permalink: /projects/
         </div>
         <div class="project-links">
           <a class="project-link" href="https://github.com/iwisvirus/STA302" target="_blank">↗ github</a>
-          <a class="project-link" href="/files/pro(1).pdf" target="_blank">↗ pdf</a>
+          <a class="project-link" href="/files/pro%20(1).pdf" target="_blank">↗ pdf</a>
         </div>
       </div>
     </div>
