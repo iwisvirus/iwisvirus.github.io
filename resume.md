@@ -150,6 +150,7 @@ permalink: /resume/
   <div class="resume-tabs">
     <button class="tab-btn active" onclick="switchTab('it')">IT &amp; Digital Forensics</button>
     <button class="tab-btn" onclick="switchTab('hospitality')">Hospitality</button>
+    <button class="tab-btn" onclick="switchTab('other')">Other</button>
   </div>
 
   <!-- ==================== IT & DFIR TAB ==================== -->
@@ -226,28 +227,6 @@ permalink: /resume/
       </ul>
     </div>
 
-    <div class="r-entry">
-      <p class="r-role">Mail Services Associate (Intern)</p>
-      <p class="r-company">Foresters Financial</p>
-      <p class="r-dates">May 2021 – August 2021 &nbsp;·&nbsp; Toronto, ON</p>
-      <ul>
-        <li>Performed data entry and documentation in Excel and PowerPoint, preparing progress reports for management.</li>
-        <li>Printed, sorted, and organized confidential client insurance records with discretion.</li>
-        <li>Supported office equipment setup and maintenance.</li>
-      </ul>
-    </div>
-
-    <div class="r-entry">
-      <p class="r-role">Pharmacy Assistant</p>
-      <p class="r-company">Haber's Compounding Pharmacy &amp; Shoppers Drug Mart</p>
-      <p class="r-dates">2019 – 2020 &nbsp;·&nbsp; Toronto, ON</p>
-      <ul>
-        <li>Created and updated patient records with accuracy, handling personal health information with discretion.</li>
-        <li>Assisted pharmacists in preparing and dispensing medications per pharmacy protocols.</li>
-        <li>Provided clear, courteous service in a regulated healthcare setting.</li>
-      </ul>
-    </div>
-
     <p class="r-section">Projects</p>
     <div class="r-entry">
       <p class="r-role">Google Cybersecurity Certificate</p>
@@ -259,59 +238,6 @@ permalink: /resume/
     </div>
     <div class="r-entry">
       <p class="r-role" style="color:#60a5fa;"><a href="/projects/" style="color:#60a5fa;">→ See full projects page</a></p>
-    </div>
-
-    <p class="r-section">Awards & Recognition</p>
-    <div class="r-entry">
-      <p class="r-role">High School Honour Roll</p>
-      <p class="r-company">High School</p>
-      <p class="r-dates">2016, 2017, 2018, 2019</p>
-    </div>
-    <div class="r-entry">
-      <p class="r-role">Canadian Team Mathematics Contest — 3rd Place</p>
-      <p class="r-company">CEMC</p>
-      <p class="r-dates">Dec 2018</p>
-    </div>
-    <div class="r-entry">
-      <p class="r-role">Euclid Contest — Group 2 &nbsp;/&nbsp; Canadian Senior Mathematics Contest — Group 2</p>
-      <p class="r-company">CEMC</p>
-      <p class="r-dates">2018</p>
-    </div>
-    <div class="r-entry">
-      <p class="r-role">Cayley Contest — Group 4 &nbsp;/&nbsp; Canadian Senior Math Contest — Group 3 &nbsp;/&nbsp; Avogadro Exam — 73rd Percentile</p>
-      <p class="r-company">CEMC / University of Waterloo</p>
-      <p class="r-dates">2017</p>
-    </div>
-    <div class="r-entry">
-      <p class="r-role">COMC Honour Roll &nbsp;/&nbsp; Canadian Intermediate Mathematics Contest — Group 3</p>
-      <p class="r-company">CEMC</p>
-      <p class="r-dates">2016 &amp; 2017</p>
-    </div>
-
-    <p class="r-section">Activities & Involvement</p>
-    <div class="r-entry">
-      <p class="r-role">Risk Management Chair</p>
-      <p class="r-company">Alpha Kappa Delta Phi (aKDPhi) — University of Toronto</p>
-      <p class="r-dates">Jan 2021 – Present</p>
-      <ul>
-        <li>Educated the Chapter on risk management through workshops and presentations covering Risk Management Policy, Criminal Liability, Alcohol & Drug Abuse, Fire Prevention, and Sexual Abuse & Harassment programs.</li>
-      </ul>
-    </div>
-    <div class="r-entry">
-      <p class="r-role">Fundraising Chair</p>
-      <p class="r-company">Alpha Kappa Delta Phi (aKDPhi) — University of Toronto</p>
-      <p class="r-dates">Jan 2021 – Present</p>
-      <ul>
-        <li>Organized Bubble Tea and Krispy Kreme fundraising events; created promotional materials and coordinated with stakeholders.</li>
-      </ul>
-    </div>
-    <div class="r-entry">
-      <p class="r-role">Manager</p>
-      <p class="r-company">Korean Canadian University & Toronto Students' Association (KCUTSA)</p>
-      <p class="r-dates">Sep 2019 – Present</p>
-      <ul>
-        <li>Streamlined event planning; designed event posters and managed electronic databases using Excel.</li>
-      </ul>
     </div>
 
     <p class="r-section">Technical Skills</p>
@@ -491,6 +417,90 @@ permalink: /resume/
           <span class="skill-tag">French</span>
         </div>
       </div>
+    </div>
+
+  </div>
+
+  <!-- ==================== OTHER TAB ==================== -->
+  <div id="tab-other" class="tab-content">
+
+    <p class="r-section">Experience</p>
+
+    <div class="r-entry">
+      <p class="r-role">Mail Services Associate (Intern)</p>
+      <p class="r-company">Foresters Financial</p>
+      <p class="r-dates">May 2021 – August 2021 &nbsp;·&nbsp; Toronto, ON</p>
+      <ul>
+        <li>Performed data entry and documentation in Excel and PowerPoint, preparing progress reports for management.</li>
+        <li>Printed, sorted, and organized confidential client insurance records with discretion.</li>
+        <li>Supported office equipment setup and maintenance.</li>
+      </ul>
+    </div>
+
+    <div class="r-entry">
+      <p class="r-role">Pharmacy Assistant</p>
+      <p class="r-company">Haber's Compounding Pharmacy &amp; Shoppers Drug Mart</p>
+      <p class="r-dates">2019 – 2020 &nbsp;·&nbsp; Toronto, ON</p>
+      <ul>
+        <li>Created and updated patient records with accuracy, handling personal health information with discretion.</li>
+        <li>Assisted pharmacists in preparing and dispensing medications per pharmacy protocols.</li>
+        <li>Provided clear, courteous service in a regulated healthcare setting.</li>
+      </ul>
+    </div>
+
+    <p class="r-section">Awards & Recognition</p>
+
+    <div class="r-entry">
+      <p class="r-role">High School Honour Roll</p>
+      <p class="r-company">High School</p>
+      <p class="r-dates">2016, 2017, 2018, 2019</p>
+    </div>
+    <div class="r-entry">
+      <p class="r-role">Canadian Team Mathematics Contest — 3rd Place</p>
+      <p class="r-company">CEMC</p>
+      <p class="r-dates">Dec 2018</p>
+    </div>
+    <div class="r-entry">
+      <p class="r-role">Euclid Contest — Group 2 &nbsp;/&nbsp; Canadian Senior Mathematics Contest — Group 2</p>
+      <p class="r-company">CEMC</p>
+      <p class="r-dates">2018</p>
+    </div>
+    <div class="r-entry">
+      <p class="r-role">Cayley Contest — Group 4 &nbsp;/&nbsp; Canadian Senior Math Contest — Group 3 &nbsp;/&nbsp; Avogadro Exam — 73rd Percentile</p>
+      <p class="r-company">CEMC / University of Waterloo</p>
+      <p class="r-dates">2017</p>
+    </div>
+    <div class="r-entry">
+      <p class="r-role">COMC Honour Roll &nbsp;/&nbsp; Canadian Intermediate Mathematics Contest — Group 3</p>
+      <p class="r-company">CEMC</p>
+      <p class="r-dates">2016 &amp; 2017</p>
+    </div>
+
+    <p class="r-section">Activities & Involvement</p>
+
+    <div class="r-entry">
+      <p class="r-role">Risk Management Chair</p>
+      <p class="r-company">Alpha Kappa Delta Phi (aKDPhi) — University of Toronto</p>
+      <p class="r-dates">Jan 2021 – Present</p>
+      <ul>
+        <li>Educated the Chapter on risk management through workshops covering Risk Management Policy, Criminal Liability, Alcohol & Drug Abuse, Fire Prevention, and Sexual Abuse & Harassment programs.</li>
+      </ul>
+    </div>
+    <div class="r-entry">
+      <p class="r-role">Fundraising Chair</p>
+      <p class="r-company">Alpha Kappa Delta Phi (aKDPhi) — University of Toronto</p>
+      <p class="r-dates">Jan 2021 – Present</p>
+      <ul>
+        <li>Organized Bubble Tea and Krispy Kreme fundraising events; created promotional materials and coordinated with stakeholders.</li>
+      </ul>
+    </div>
+    <div class="r-entry">
+      <p class="r-role">Manager</p>
+      <p class="r-company">Korean Canadian University & Toronto Students' Association (KCUTSA)</p>
+      <p class="r-dates">Sep 2019 – Present</p>
+      <ul>
+        <li>Streamlined event planning; designed event posters and managed electronic databases using Excel.</li>
+      </ul>
     </div>
 
   </div>
