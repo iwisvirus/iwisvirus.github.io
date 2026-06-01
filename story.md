@@ -16,7 +16,7 @@ permalink: /story/
     margin: 30px auto;
     line-height: 1.9;
   }
-  .story-terminal .s-header {
+  .s-header {
     color: #9ca3af;
     margin-bottom: 24px;
     padding-bottom: 14px;
@@ -25,33 +25,54 @@ permalink: /story/
   }
   .story-terminal h2 {
     color: #22c55e;
-    font-size: 1rem;
-    margin: 32px 0 14px;
+    font-size: 0.85rem;
+    margin: 36px 0 14px;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
   }
-  .story-terminal h2::before { content: "// "; color: #6b7280; }
+  .story-terminal h2::before { content: "// "; color: #374151; }
+  .chapter-num {
+    color: #374151;
+    font-size: 0.72rem;
+    display: block;
+    margin-bottom: 10px;
+  }
   .story-terminal p {
     color: #9ca3af;
-    font-size: 0.92rem;
-    margin: 0 0 16px;
+    font-size: 0.88rem;
+    margin: 0 0 14px;
+    line-height: 1.9;
   }
   .story-terminal p em {
     color: #e5e7eb;
     font-style: normal;
   }
-  .chapter-num {
-    color: #6b7280;
-    font-size: 0.75rem;
-    display: block;
-    margin-bottom: 6px;
-  }
-  .highlight-line {
+  .pull-quote {
     color: #60a5fa;
-    border-left: 2px solid #22c55e44;
-    padding-left: 14px;
+    border-left: 2px solid #22c55e55;
+    padding: 10px 18px;
     margin: 20px 0;
-    font-size: 0.95rem;
+    font-size: 0.9rem;
+    font-style: italic;
+    background: #0d1117;
+    border-radius: 0 6px 6px 0;
+  }
+  .story-divider {
+    border: none;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #1e2530, transparent);
+    margin: 28px 0;
+  }
+  .story-terminal h1 {
+    color: #22c55e;
+    font-size: 1.3rem;
+    margin: 0 0 4px;
+    text-shadow: 0 0 12px rgba(34,197,94,0.2);
+  }
+  .story-subtitle {
+    color: #6b7280;
+    font-size: 0.78rem;
+    margin: 0 0 28px;
   }
 </style>
 
@@ -60,42 +81,127 @@ permalink: /story/
     <span style="color:#22c55e">iris@brain</span>:<span style="color:#60a5fa">~</span>$ cat origin.txt
   </div>
 
-  <h2>Chapter 01 — Arriving</h2>
-  <span class="chapter-num">[ Fill in the year / age ]</span>
+  <h1>Origin Story</h1>
+  <p class="story-subtitle">Iris (Hyelim) Myung &nbsp;·&nbsp; 2016 – present</p>
+
+  <h2>Chapter 01 — Arrival</h2>
+  <span class="chapter-num">Newmarket, Ontario · 2016 · Grade 10</span>
   <p>
-    [ Write about coming to Canada alone in high school — what that felt like, what you left behind,
-    what you were chasing. ]
+    I came to Canada alone at sixteen. No friends here, no family — just a suitcase and a homestay family in Newmarket.
+    I didn't have much of a social life. I was the new kid who didn't quite fit in, and honestly, I leaned into it.
+    I grinded. School became the thing I could control, so I controlled it hard.
+    Different homestay families, different houses, same routine: wake up, study, repeat.
+  </p>
+  <p>
+    Back in Korea, my parents were going through a divorce. I didn't fully register it at the time —
+    I was too focused on just getting through each day. That kind of thing has a way of catching up with you later.
   </p>
 
-  <div class="highlight-line">
-    [ A line that captures the moment — the airport, the first night, whatever sticks. ]
+  <hr class="story-divider">
+
+  <h2>Chapter 02 — University of Toronto</h2>
+  <span class="chapter-num">September 2019 · Computer Science</span>
+  <p>
+    I got into UofT Computer Science. That was the goal and I hit it.
+    But first semester hit differently than I expected.
+    I was getting low 80s — scores I would've celebrated in high school anywhere else —
+    but at UofT, surrounded by people who seemed to breathe algorithms,
+    <em>it felt like failure.</em>
+  </p>
+  <p>
+    Everything accumulated at once. The isolation, my parents' divorce finally landing,
+    being far from home with no real support system. I ended up at CAMH.
+    It was a hard time — one I don't hide, because pretending it didn't happen helps no one.
+  </p>
+
+  <div class="pull-quote">
+    Everyone had an opinion. Go back to Korea. Switch schools. Take a break. Lower your expectations.
   </div>
 
-  <h2>Chapter 02 — Figuring It Out</h2>
-  <span class="chapter-num">[ High school years ]</span>
   <p>
-    [ How you navigated school, money, being alone. How you paid your own way.
-    What you had to learn fast that other people didn't have to. ]
+    I heard all of it. And then I decided: <em>I'll finish in four years.</em>
+    Not because I had to prove something to anyone else — but because I said I would.
   </p>
 
-  <h2>Chapter 03 — Getting to University of Toronto</h2>
-  <span class="chapter-num">[ Application / first year ]</span>
+  <hr class="story-divider">
+
+  <h2>Chapter 03 — Paying My Own Way</h2>
+  <span class="chapter-num">2020 – 2024</span>
   <p>
-    [ How UofT happened. What getting in meant. What the first year was like. ]
+    To make four years work, I took 6–7 courses per semester and stacked summer courses on top.
+    Around 2020, I started working at a restaurant to cover rent and living expenses.
+    After first year, financial support from home stopped. Everything from that point — rent, food, tuition — was on me.
+  </p>
+  <p>
+    After third year I landed an internship at Moneris as a software developer.
+    I was working two other jobs alongside it.
+    My final year, I paid my own international student tuition — one of the highest in the country.
   </p>
 
-  <h2>Chapter 04 — Finding DFIR</h2>
-  <span class="chapter-num">[ The turn ]</span>
+  <div class="pull-quote">
+    I graduated in four years. On time. As promised.
+  </div>
+
+  <hr class="story-divider">
+
+  <h2>Chapter 04 — The Gap Year Nobody Plans For</h2>
+  <span class="chapter-num">2024</span>
   <p>
-    [ When and how you found digital forensics. Why it clicked.
-    What you want to build in this field. ]
+    I graduated in 2024 into one of the worst CS job markets in recent memory.
+    Hundreds of applications. Silence. More silence. I kept working in hospitality to stay afloat —
+    bartending, serving, keeping the lights on.
+  </p>
+  <p>
+    But looking back, that year wasn't wasted. I took a cybersecurity course and something clicked.
+    Not in a "this seems like a good career" way — in a <em>"this is exactly what I'm supposed to be doing"</em> way.
+    Digital forensics specifically. The idea that you can reconstruct the truth from what people thought they deleted —
+    that pulled me in completely.
   </p>
 
-  <h2>Chapter 05 — Right Now</h2>
-  <span class="chapter-num">[ Present ]</span>
+  <hr class="story-divider">
+
+  <h2>Chapter 05 — Breaking In</h2>
+  <span class="chapter-num">2025 – present</span>
   <p>
-    [ Where you are today. What you're working toward.
-    PR, the house, the concert, the ballroom competition — all of it. ]
+    I got a job at UofT's Law Department as an IT Systems & Security Analyst.
+    Working in a legal environment only deepened my interest — chain of custody, evidence, investigations.
+    I was working two other jobs on top of that, still.
+  </p>
+  <p>
+    I went all in on digital forensics. I talked to everyone I could find in the field.
+    Made connections. Asked for tips. Someone told me to write blogs — so I did.
+    I started this site and documented everything I was learning, every tool, every lab.
+  </p>
+  <p>
+    Then I started cold calling. Law firms. Forensics companies. People high up in the field.
+    Most didn't respond. Some did.
+    <em>Data Rescue Labs took me in.</em>
+  </p>
+
+  <div class="pull-quote">
+    I have never felt so happy going to work. I genuinely can't wait to get there.
+  </div>
+
+  <hr class="story-divider">
+
+  <h2>Chapter 06 — Right Now</h2>
+  <span class="chapter-num">present · more to come</span>
+  <p>
+    This is where I am. Digital Forensics Examiner. Building skills every day —
+    mobile extractions, storage media recovery, database forensics, legal reporting.
+    Still working on the PR. Still planning the house, the business, the concert, the ballroom competition.
+    Still figuring it out.
+  </p>
+
+  <div class="pull-quote">
+    "Learn from mistakes, but never regret."
+  </div>
+
+  <p>
+    Came to Canada in 2016 at sixteen, alone.
+    Made it to UofT. Paid my own way through. Graduated in four years.
+    Found the thing I love.
+    <em>More to come.</em>
   </p>
 
 </div>
