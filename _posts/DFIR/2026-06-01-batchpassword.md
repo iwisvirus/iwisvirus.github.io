@@ -12,5 +12,6 @@ categories: DFIR
   - customize pw recovery settings for multiple encrypted items
   - prioritize encrypted files/disk images by importance
   - prioritize encrypted files/disk images by decryption complexity
-
-![PDF Info Screenshot](/images/pce1.png)
+- useful for leaving it for couple months
+- build attacks on cases rather than files
+- receives emails about passwords found or your recovery job progress right from the passware kit forensic 
