@@ -128,7 +128,7 @@ permalink: /about/
     <div><span class="key">Name</span><span class="sep">:</span><span class="val">Iris (Hyelim) Myung</span></div>
     <div><span class="key">Education</span><span class="sep">:</span><span class="val">University of Toronto</span></div>
     <div><span class="key">Degree</span><span class="sep">:</span><span class="val">Computer Science · Math & Statistics Minor</span></div>
-    <div><span class="key">Career goal</span><span class="sep">:</span><span class="val">Top digital forensics examiner & tool builder</span></div>
+    <div><span class="key">Career title</span><span class="sep">:</span><span class="val">Digital Forensics Examiner</span></div>
     <div><span class="key">Based in</span><span class="sep">:</span><span class="val">Toronto, ON</span></div>
   </div>
 
