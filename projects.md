@@ -234,27 +234,5 @@ permalink: /projects/
 
   </div>
 
-  <p class="p-section">Certifications</p>
-  <div class="projects-grid">
-
-    <div class="project-card">
-      <h3>Google Cybersecurity Certificate</h3>
-      <p class="project-meta">August 2025 &nbsp;·&nbsp; Google</p>
-      <ul class="project-desc">
-        <li>Completed Google's professional cybersecurity certificate covering secure system design, risk analysis, incident response, and security practices.</li>
-      </ul>
-      <div class="project-footer">
-        <div class="project-tags">
-          <span class="project-tag">Cybersecurity</span>
-          <span class="project-tag">Incident Response</span>
-          <span class="project-tag">Risk Analysis</span>
-        </div>
-        <div class="project-links">
-          <a class="project-link" href="https://github.com/iwisvirus/Google-cybersecurity-certificate" target="_blank">↗ github</a>
-        </div>
-      </div>
-    </div>
-
-  </div>
 
 </div>

@@ -143,6 +143,9 @@ permalink: /resume/
     <p class="r-role">Google Cybersecurity Certificate</p>
     <p class="r-company">Google</p>
     <p class="r-dates">August 2025</p>
+    <ul>
+      <li>Covered secure system design, risk analysis, incident response, and security practices. <a href="https://github.com/iwisvirus/Google-cybersecurity-certificate" target="_blank" style="color:#60a5fa;">↗ github</a></li>
+    </ul>
   </div>
 
   <p class="r-section">Experience</p>
