@@ -272,6 +272,14 @@ nav {
   background: #0b0f14;
 }
 
+/* Gradient divider */
+.gradient-divider {
+  border: none;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #22c55e44, transparent);
+  margin: 32px 0;
+}
+
 /* Post list titles */
 .category-title {
   font-size: 1.6rem;
