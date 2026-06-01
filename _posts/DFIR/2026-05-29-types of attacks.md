@@ -39,4 +39,4 @@ special
 
 
 
-![PDF Info Screenshot]({{ site.baseurl }}/images/pce1.png)
+![PDF Info Screenshot](/images/pce1.png)

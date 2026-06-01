@@ -15,51 +15,51 @@ The initial investigation shows that there was someone who accessed the computer
 
 I used the registry explorer tool to tackle this problem. 
 
-![PDF Info Screenshot]({{ site.baseurl }}/images/test1.png)
+![PDF Info Screenshot](/images/test1.png)
 
 **2. What top-secret keyword was searched for using the search bar in Windows Explorer?** <br>
 
 I used the registry explorer tool to tackle this problem as well. 
 
-![PDF Info Screenshot]({{ site.baseurl }}/images/test2.png)
+![PDF Info Screenshot](/images/test2.png)
 
 **3. What is the name of the downloaded file to the Downloads folder?** <br>
 
 I used the Autopsy tool and looked through the Downloads file to tackle this problem 
-![PDF Info Screenshot]({{ site.baseurl }}/images/test3.png)
+![PDF Info Screenshot](/images/test3.png)
 
 **4. When was the file from the previous question downloaded?**
 
 I used the Autopsy tool and looked through the Downloads file to tackle this problem 
-![PDF Info Screenshot]({{ site.baseurl }}/images/test4.png)
+![PDF Info Screenshot](/images/test4.png)
 
 **5. Thanks to the previously downloaded file, a PNG file was opened. When was thihs file opened?**
 
 I used the registry explorer tool to tackle this problem. When you right click the file, there's actually a tool that gives you all the details which I found very helpful.
 
-![PDF Info Screenshot]({{ site.baseurl }}/images/test5.png)
-![PDF Info Screenshot]({{ site.baseurl }}/images/test6.png)
+![PDF Info Screenshot](/images/test5.png)
+![PDF Info Screenshot](/images/test6.png)
 
 **6. A text file was created in the Desktop folder. How many times was this file opened?**
 
 I used the command prompt with the JLECmd.exe tool.
-![PDF Info Screenshot]({{ site.baseurl }}/images/test7.png)
+![PDF Info Screenshot](/images/test7.png)
 
 **7. When was the text file from the previous question last modified?**
 
 I used the command prompt with the JLECmd.exe tool.
-![PDF Info Screenshot]({{ site.baseurl }}/images/test7.png)
+![PDF Info Screenshot](/images/test7.png)
 
 **8. The contents of the file were exfiltrated to pastebin.com. What is the generated URL of the exfiltrated data?**
 
 I used the Autopsy tool and looked through the web history. 
-![PDF Info Screenshot]({{ site.baseurl }}/images/test8.png)
+![PDF Info Screenshot](/images/test8.png)
 
 
 **9. What is the string that was copied to the pastebin URL?**
 
 I used the Autopsy tool and looked through the web history. 
-![PDF Info Screenshot]({{ site.baseurl }}/images/test9.png)
+![PDF Info Screenshot](/images/test9.png)
 
 
 **Summary:**
