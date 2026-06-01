@@ -197,11 +197,14 @@ permalink: /story/
     "Learn from mistakes, but never regret."
   </div>
 
-  <p>
-    Came to Canada in 2016 at sixteen, alone.
-    Made it to UofT. Paid my own way through. Graduated in four years.
-    Found the thing I love.
-    <em>More to come.</em>
-  </p>
+  <p class="r-section" style="color:#22c55e; font-size:0.75rem; text-transform:uppercase; letter-spacing:3px; margin:32px 0 14px; padding-bottom:6px; border-bottom:1px solid #1e2530;">// Upcoming</p>
+
+  <ul style="list-style:none; padding:0; margin:0; color:#9ca3af; font-size:0.88rem; line-height:2;">
+    <li><span style="color:#6b7280;">[ ]</span> &nbsp;Apply for Permanent Residency by 2027</li>
+    <li><span style="color:#6b7280;">[ ]</span> &nbsp;Study French — pass the TCF exam</li>
+    <li><span style="color:#6b7280;">[ ]</span> &nbsp;Build out my side business</li>
+    <li><span style="color:#6b7280;">[ ]</span> &nbsp;Get a motorcycle license</li>
+    <li><span style="color:#6b7280;">[ ]</span> &nbsp;Hold my own concert</li>
+  </ul>
 
 </div>
