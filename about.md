@@ -145,30 +145,27 @@ permalink: /about/
   <ul class="goals-list">
     <li>Get Permanent Residency in Canada</li>
     <li>Build my own house</li>
-    <li>Own and build my own business</li>
     <li>Write my own book</li>
     <li>Hold a small concert</li>
     <li>Compete in a ballroom dancing competition</li>
+    <li>Learn carpentry</li>
+    <li>Learn 1–2 new languages</li>
   </ul>
 
   <p class="goal-category">// career</p>
   <ul class="goals-list">
     <li>Become a top digital forensics examiner</li>
     <li>Build forensics tools used in real investigations</li>
-  </ul>
-
-  <p class="goal-category">// personal growth</p>
-  <ul class="goals-list">
-    <li>Learn carpentry</li>
-    <li>Learn 1–2 new languages</li>
+    <li>Build my own business</li>
   </ul>
 
   <hr class="section-divider">
 
   <p class="section-label">Origin</p>
   <p style="color:#9ca3af; font-size:0.88rem; margin:0 0 10px;">
-    Came to Canada alone in high school. Figured it out. Made it to UofT.
-    Still figuring it out — just with better tools.
+    Came to Canada in 2016 at grade 10, alone. Made it to UofT Computer Science.
+    Made it to my first digital forensics job. More to come —
+    figuring it out as life goes.
   </p>
   <a class="story-link" href="/story/">$ cat origin.txt →</a>
 
