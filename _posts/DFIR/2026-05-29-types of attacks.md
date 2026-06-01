@@ -31,11 +31,20 @@ group
   - append attacsk
 special
   - encryption keys extraction
+      - only one microsoft words, excel, powerpoint 2007-2019
+      - decrypt file instantly 
   - zip plaintext
+      - win zip encryption
   - rainbow tables
+      - password hashes, microsoft for certain years
+      - set of pre computer hashes
+      - can look up what hashes would make up that password 
   - surezip
+      - at least simultaneously 5 encrypted files 
 
-
+- attack settings
+- recovery process can be paused, stopped, and resumed
+- recovery process can be saved and exported to be resume on other machines
 
 
 
