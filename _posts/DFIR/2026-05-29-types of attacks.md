@@ -26,9 +26,11 @@ Basic attacks
       - can be used as a part of a more complex attack
       - can check if a pw is correct without having to open the file or create a decrypted image of the encrypted volume 
   - previous pw
+
 group
   - join attacks
-  - append attacsk
+  - append attacks
+
 special
   - encryption keys extraction
       - only one microsoft words, excel, powerpoint 2007-2019
