@@ -179,7 +179,7 @@ permalink: /projects/
           <span class="project-tag">GUI</span>
         </div>
         <div class="project-links">
-          <a class="project-link" href="https://github.com/iwisvirus/CSC209" target="_blank">↗ github</a>
+          <a class="project-link" href="https://github.com/iwisvirus/CSC207" target="_blank">↗ github</a>
         </div>
       </div>
     </div>
