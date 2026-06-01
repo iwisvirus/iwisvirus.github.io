@@ -251,17 +251,6 @@ permalink: /resume/
     </ul>
   </div>
 
-  <p class="r-section">Independent Research</p>
-  <div class="r-entry">
-    <p class="r-role">Self-directed DFIR Research</p>
-    <p class="r-company"><a href="https://iwisvirus.github.io">iwisvirus.github.io</a></p>
-    <ul>
-      <li><strong>HackTheBox & TryHackMe:</strong> Sherlock/Brutus (log analysis, attacker attribution), Volatility (memory forensics, RAM artifact extraction), Autopsy (disk imaging, timeline analysis), Windows Forensics 1 & 2 (registry, prefetch, LNK files, shellbags, browser artifacts) — mapped to MITRE ATT&CK.</li>
-      <li><strong>Academic Modules:</strong> Linux for Digital Forensics, Windows CLI forensics, number systems, and forensic timestamp interpretation.</li>
-      <li><strong>Scripting & Tooling:</strong> Bash/Python for log parsing, timestamp normalization, and artifact triage.</li>
-    </ul>
-  </div>
-
   <p class="r-section">Projects</p>
   <div class="r-entry">
     <p class="r-role">1-on-1 Scheduling Website</p>
