@@ -30,6 +30,7 @@ Basic attacks
 group
   - join attacks
   - append attacks
+      - combines output of multiple attacks and checks the passwords from all attacks in order of legnth 
 
 special
   - encryption keys extraction
