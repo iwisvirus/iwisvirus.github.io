@@ -1,5 +1,6 @@
 ---
 layout: dfir
 category: DFIR
-title: DFIR
+title: Digital Forensics
+permalink: /category/digital-forensics/
 ---

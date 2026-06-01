@@ -92,7 +92,7 @@ title: Welcome
   <div class="terminal-line">> Welcome. I'm not that boring...</div>
   <div class="terminal-line">> What would you like to explore?</div>
   <div class="terminal-line">&nbsp;</div>
-  <div class="terminal-line muted">   [1] dfir       — Digital Forensics &amp; Incident Response journey</div>
+  <div class="terminal-line muted">   [1] digital-forensics — Digital Forensics &amp; Incident Response journey</div>
   <div class="terminal-line muted">   [2] chaos      — Creative chaos &amp; other interests</div>
   <div class="terminal-line muted">   [help]         — show all available commands</div>
 
@@ -110,8 +110,9 @@ title: Welcome
   const output = document.getElementById("terminalOutput");
 
   const commands = {
-    "1": () => redirect("Redirecting to DFIR Journey...", "{{ site.baseurl }}/category/DFIR/"),
-    "dfir": () => redirect("Redirecting to DFIR Journey...", "{{ site.baseurl }}/category/DFIR/"),
+    "1": () => redirect("Redirecting to Digital Forensics...", "{{ site.baseurl }}/category/digital-forensics/"),
+    "dfir": () => redirect("Redirecting to Digital Forensics...", "{{ site.baseurl }}/category/digital-forensics/"),
+    "digital-forensics": () => redirect("Redirecting to Digital Forensics...", "{{ site.baseurl }}/category/digital-forensics/"),
     "2": () => redirect("Redirecting to Creative Chaos...", "{{ site.baseurl }}/category/other-interests/"),
     "chaos": () => redirect("Redirecting to Creative Chaos...", "{{ site.baseurl }}/category/other-interests/"),
     "help": () => `

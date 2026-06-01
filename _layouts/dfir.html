@@ -4,10 +4,10 @@ layout: default
 
 <div class="section-terminal">
   <div class="terminal-header">
-    <span style="color:#22c55e">iris@brain</span>:<span style="color:#60a5fa">~/dfir</span>$ ls -lt posts/
+    <span style="color:#22c55e">iris@brain</span>:<span style="color:#60a5fa">~/digital-forensics</span>$ ls -lt posts/
   </div>
 
-  <h1>DFIR Journey</h1>
+  <h1>Digital Forensics</h1>
 
   {% if site.categories.DFIR %}
     {% assign posts = site.categories.DFIR | sort: "date" | reverse %}
@@ -20,6 +20,6 @@ layout: default
       </article>
     {% endfor %}
   {% else %}
-    <p class="muted">No DFIR posts yet.</p>
+    <p class="muted">No posts yet.</p>
   {% endif %}
 </div>
