@@ -23,7 +23,14 @@ permalink: /about/
     box-shadow: 0 20px 60px rgba(0,0,0,0.7), 0 0 0 1px #1e2530;
     max-width: 820px;
     margin: 30px auto;
+    animation: fadeInUp 0.6s ease both;
   }
+
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
   .terminal-header {
     color: #9ca3af;
     margin-bottom: 20px;
@@ -49,6 +56,18 @@ permalink: /about/
   }
   .section-label::before { content: "## "; color: #6b7280; }
 
+  .motto {
+    border-left: 2px solid #22c55e;
+    padding: 10px 16px;
+    margin: 0 0 20px;
+    color: #e5e7eb;
+    font-size: 0.95rem;
+    font-style: italic;
+    background: #0d1117;
+    border-radius: 0 6px 6px 0;
+  }
+  .motto span { color: #6b7280; font-size: 0.75rem; font-style: normal; display: block; margin-top: 4px; }
+
   .goals-list {
     list-style: none;
     padding: 0;
@@ -61,7 +80,9 @@ permalink: /about/
     display: flex;
     align-items: flex-start;
     gap: 10px;
+    transition: color 0.2s;
   }
+  .goals-list li:hover { color: #d1d5db; }
   .goals-list li::before {
     content: "[ ]";
     color: #6b7280;
@@ -89,11 +110,12 @@ permalink: /about/
     border: 1px solid #1e2530;
     padding: 6px 14px;
     border-radius: 6px;
-    transition: border-color 0.2s, color 0.2s;
+    transition: border-color 0.2s, color 0.2s, box-shadow 0.2s;
   }
   .story-link:hover {
     border-color: #22c55e55;
     color: #22c55e;
+    box-shadow: 0 0 10px rgba(34,197,94,0.15);
   }
 </style>
 
@@ -106,7 +128,7 @@ permalink: /about/
     <div><span class="key">Name</span><span class="sep">:</span><span class="val">Iris (Hyelim) Myung</span></div>
     <div><span class="key">Education</span><span class="sep">:</span><span class="val">University of Toronto</span></div>
     <div><span class="key">Degree</span><span class="sep">:</span><span class="val">Computer Science · Math & Statistics Minor</span></div>
-    <div><span class="key">Career goal</span><span class="sep">:</span><span class="val">Top DFIR examiner & tool builder</span></div>
+    <div><span class="key">Career goal</span><span class="sep">:</span><span class="val">Top digital forensics examiner & tool builder</span></div>
     <div><span class="key">Based in</span><span class="sep">:</span><span class="val">Toronto, ON</span></div>
   </div>
 
@@ -114,26 +136,31 @@ permalink: /about/
 
   <p class="section-label">Goals</p>
 
+  <div class="motto">
+    "Learn from mistakes, but never regret."
+    <span>— life motto</span>
+  </div>
+
   <p class="goal-category">// life</p>
   <ul class="goals-list">
-    <li>[ Add a life goal from your spreadsheet ]</li>
-    <li>[ Another one ]</li>
     <li>Get Permanent Residency in Canada</li>
     <li>Build my own house</li>
+    <li>Own and build my own business</li>
+    <li>Write my own book</li>
     <li>Hold a small concert</li>
-    <li>Ballroom dancing competition</li>
+    <li>Compete in a ballroom dancing competition</li>
   </ul>
 
   <p class="goal-category">// career</p>
   <ul class="goals-list">
-    <li>[ Add a career goal ]</li>
-    <li>[ Another one ]</li>
+    <li>Become a top digital forensics examiner</li>
+    <li>Build forensics tools used in real investigations</li>
   </ul>
 
   <p class="goal-category">// personal growth</p>
   <ul class="goals-list">
-    <li>[ Add a personal goal ]</li>
-    <li>[ Another one ]</li>
+    <li>Learn carpentry</li>
+    <li>Learn 1–2 new languages</li>
   </ul>
 
   <hr class="section-divider">

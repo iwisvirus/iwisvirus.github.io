@@ -16,23 +16,146 @@
     <style>
       body { font-family: 'JetBrains Mono', 'Courier New', monospace; }
       .terminal, .terminal-header, input, .section-terminal { font-family: 'JetBrains Mono', 'Courier New', monospace; }
+
+      /* Matrix rain canvas */
+      #matrix-canvas {
+        position: fixed;
+        top: 0; left: 0;
+        width: 100%; height: 100%;
+        z-index: -1;
+        opacity: 0.03;
+        pointer-events: none;
+      }
+
+      /* Page fade-in */
+      #main { animation: fadeInUp 0.5s ease both; }
+      @keyframes fadeInUp {
+        from { opacity: 0; transform: translateY(16px); }
+        to   { opacity: 1; transform: translateY(0); }
+      }
+
+      /* Glitch on site name */
+      .site-name a {
+        position: relative;
+        display: inline-block;
+      }
+      .site-name a:hover {
+        animation: glitch 0.4s steps(2) infinite;
+        color: #22c55e !important;
+        text-shadow: none !important;
+      }
+      @keyframes glitch {
+        0%   { text-shadow:  2px 0 #ef4444, -2px 0 #60a5fa; }
+        25%  { text-shadow: -2px 0 #ef4444,  2px 0 #60a5fa; }
+        50%  { text-shadow:  2px 2px #ef4444, -2px -2px #60a5fa; }
+        75%  { text-shadow: -1px 0 #ef4444,  1px 0 #60a5fa; }
+        100% { text-shadow:  2px 0 #ef4444, -2px 0 #60a5fa; }
+      }
+
+      /* Scanline overlay on all terminal blocks */
+      .terminal, .section-terminal, .resume-terminal,
+      .projects-terminal, .art-terminal, .story-terminal {
+        position: relative;
+        overflow: hidden;
+      }
+      .terminal::after, .section-terminal::after, .resume-terminal::after,
+      .projects-terminal::after, .art-terminal::after, .story-terminal::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: repeating-linear-gradient(
+          to bottom,
+          transparent,
+          transparent 2px,
+          rgba(0,0,0,0.06) 2px,
+          rgba(0,0,0,0.06) 4px
+        );
+        pointer-events: none;
+        z-index: 1;
+        border-radius: inherit;
+      }
+
+      /* Nav link active glow */
+      nav a.active {
+        color: #22c55e !important;
+        text-shadow: 0 0 8px rgba(34,197,94,0.5);
+      }
+
+      /* Smooth nav underline hover */
+      nav a {
+        position: relative;
+      }
+      nav a::after {
+        content: "";
+        position: absolute;
+        bottom: -3px; left: 0;
+        width: 0; height: 1px;
+        background: #22c55e;
+        transition: width 0.2s;
+      }
+      nav a:hover::after { width: 100%; }
+
+      /* Footer icons glow on hover */
+      .svg-icon:hover path, .svg-icon:hover polygon, .svg-icon:hover rect {
+        fill: #22c55e;
+        filter: drop-shadow(0 0 4px rgba(34,197,94,0.6));
+      }
     </style>
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
-
-    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
   </head>
+
+  <canvas id="matrix-canvas"></canvas>
+
   <script>
   document.addEventListener("DOMContentLoaded", function () {
+    // Disclaimer close
     const closeBtn = document.getElementById("closeDisclaimer");
     const disclaimer = document.getElementById("disclaimerBox");
-
     if (closeBtn && disclaimer) {
-      closeBtn.addEventListener("click", function () {
-        disclaimer.style.display = "none";
-      });
+      closeBtn.addEventListener("click", () => disclaimer.style.display = "none");
     }
+
+    // Active nav link
+    const links = document.querySelectorAll("nav a");
+    links.forEach(link => {
+      if (link.href === window.location.href || window.location.pathname.startsWith(new URL(link.href).pathname) && new URL(link.href).pathname !== "/") {
+        link.classList.add("active");
+      }
+    });
+
+    // Matrix rain
+    const canvas = document.getElementById("matrix-canvas");
+    const ctx = canvas.getContext("2d");
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    window.addEventListener("resize", () => {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+      cols = Math.floor(canvas.width / fontSize);
+      drops = Array(cols).fill(1);
+    });
+
+    const fontSize = 14;
+    let cols = Math.floor(canvas.width / fontSize);
+    let drops = Array(cols).fill(1);
+    const chars = "01アイウエオカキクケコ";
+
+    function drawMatrix() {
+      ctx.fillStyle = "rgba(13,17,23,0.05)";
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+      ctx.fillStyle = "#22c55e";
+      ctx.font = fontSize + "px monospace";
+      for (let i = 0; i < drops.length; i++) {
+        const char = chars[Math.floor(Math.random() * chars.length)];
+        ctx.fillText(char, i * fontSize, drops[i] * fontSize);
+        if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) drops[i] = 0;
+        drops[i]++;
+      }
+    }
+    setInterval(drawMatrix, 60);
   });
   </script>
+
   <body>
     <div class="wrapper-masthead">
       <div class="container">
