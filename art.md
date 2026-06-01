@@ -12,10 +12,10 @@ permalink: /art/
     padding: 36px;
     border-radius: 12px;
     box-shadow: 0 20px 60px rgba(0,0,0,0.7), 0 0 0 1px #1e2530;
-    max-width: 860px;
+    max-width: 900px;
     margin: 30px auto;
   }
-  .art-terminal .a-header {
+  .a-header {
     color: #9ca3af;
     margin-bottom: 24px;
     padding-bottom: 14px;
@@ -36,7 +36,7 @@ permalink: /art/
   }
   .art-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
     gap: 14px;
     margin-top: 16px;
   }
@@ -45,30 +45,19 @@ permalink: /art/
     border: 1px solid #1e2530;
     border-radius: 8px;
     overflow: hidden;
-    transition: border-color 0.2s, transform 0.2s;
+    transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
     cursor: pointer;
   }
   .art-card:hover {
     border-color: #22c55e55;
-    transform: translateY(-2px);
-    box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 28px rgba(0,0,0,0.5);
   }
   .art-card img {
     width: 100%;
     aspect-ratio: 1;
     object-fit: cover;
     display: block;
-    border-bottom: 1px solid #1e2530;
-  }
-  .art-placeholder {
-    width: 100%;
-    aspect-ratio: 1;
-    background: #0d1117;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #374151;
-    font-size: 2rem;
     border-bottom: 1px solid #1e2530;
   }
   .art-card-info {
@@ -84,14 +73,35 @@ permalink: /art/
     font-size: 0.75rem;
     margin: 0;
   }
-  .art-section-label {
-    color: #22c55e;
-    font-size: 0.8rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin: 28px 0 12px;
+
+  /* Lightbox */
+  .lightbox {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+    cursor: zoom-out;
   }
-  .art-section-label::before { content: "// "; color: #6b7280; }
+  .lightbox.active { display: flex; }
+  .lightbox img {
+    max-width: 90vw;
+    max-height: 90vh;
+    object-fit: contain;
+    border-radius: 6px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+  }
+  .lightbox-close {
+    position: absolute;
+    top: 20px; right: 28px;
+    color: #9ca3af;
+    font-size: 2rem;
+    cursor: pointer;
+    line-height: 1;
+  }
+  .lightbox-close:hover { color: #22c55e; }
 </style>
 
 <div class="art-terminal">
@@ -100,31 +110,52 @@ permalink: /art/
   </div>
 
   <h1>Art</h1>
-  <p class="subtitle">[ Add a one-liner about your art here — medium, vibe, whatever ]</p>
-
-  <p class="art-section-label">[ Category — e.g. Drawings / Digital / Photography ]</p>
+  <p class="subtitle">[ Add a description of your art here ]</p>
 
   <div class="art-grid">
 
-    <!-- Copy this block for each piece and replace the placeholder with an <img> tag -->
-    <div class="art-card">
-      <div class="art-placeholder">+</div>
+    <div class="art-card" onclick="openLightbox('/art/IMG_3698.PNG')">
+      <img src="/art/IMG_3698.PNG" alt="Art piece" loading="lazy">
       <div class="art-card-info">
         <p class="art-card-title">[ Title ]</p>
         <p class="art-card-meta">[ Medium ] · [ Year ]</p>
       </div>
     </div>
 
-    <div class="art-card">
-      <div class="art-placeholder">+</div>
+    <div class="art-card" onclick="openLightbox('/art/129AFAD5-769D-4FF0-8E8C-17E4B0ADA7C6.JPG')">
+      <img src="/art/129AFAD5-769D-4FF0-8E8C-17E4B0ADA7C6.JPG" alt="Art piece" loading="lazy">
       <div class="art-card-info">
         <p class="art-card-title">[ Title ]</p>
         <p class="art-card-meta">[ Medium ] · [ Year ]</p>
       </div>
     </div>
 
-    <div class="art-card">
-      <div class="art-placeholder">+</div>
+    <div class="art-card" onclick="openLightbox('/art/IMG_0873.jpg')">
+      <img src="/art/IMG_0873.jpg" alt="Art piece" loading="lazy">
+      <div class="art-card-info">
+        <p class="art-card-title">[ Title ]</p>
+        <p class="art-card-meta">[ Medium ] · [ Year ]</p>
+      </div>
+    </div>
+
+    <div class="art-card" onclick="openLightbox('/art/IMG_4346.jpg')">
+      <img src="/art/IMG_4346.jpg" alt="Art piece" loading="lazy">
+      <div class="art-card-info">
+        <p class="art-card-title">[ Title ]</p>
+        <p class="art-card-meta">[ Medium ] · [ Year ]</p>
+      </div>
+    </div>
+
+    <div class="art-card" onclick="openLightbox('/art/IMG_2766.JPG')">
+      <img src="/art/IMG_2766.JPG" alt="Art piece" loading="lazy">
+      <div class="art-card-info">
+        <p class="art-card-title">[ Title ]</p>
+        <p class="art-card-meta">[ Medium ] · [ Year ]</p>
+      </div>
+    </div>
+
+    <div class="art-card" onclick="openLightbox('/art/IMG_0089.JPG')">
+      <img src="/art/IMG_0089.JPG" alt="Art piece" loading="lazy">
       <div class="art-card-info">
         <p class="art-card-title">[ Title ]</p>
         <p class="art-card-meta">[ Medium ] · [ Year ]</p>
@@ -132,19 +163,22 @@ permalink: /art/
     </div>
 
   </div>
-
-  <p class="art-section-label">[ Another Category ]</p>
-
-  <div class="art-grid">
-
-    <div class="art-card">
-      <div class="art-placeholder">+</div>
-      <div class="art-card-info">
-        <p class="art-card-title">[ Title ]</p>
-        <p class="art-card-meta">[ Medium ] · [ Year ]</p>
-      </div>
-    </div>
-
-  </div>
-
 </div>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+  <img id="lightbox-img" src="" alt="">
+</div>
+
+<script>
+  function openLightbox(src) {
+    document.getElementById("lightbox-img").src = src;
+    document.getElementById("lightbox").classList.add("active");
+  }
+  function closeLightbox() {
+    document.getElementById("lightbox").classList.remove("active");
+    document.getElementById("lightbox-img").src = "";
+  }
+  document.addEventListener("keydown", e => { if (e.key === "Escape") closeLightbox(); });
+</script>
