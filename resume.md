@@ -130,7 +130,13 @@ permalink: /resume/
     <p class="r-role">B.Sc. Computer Science</p>
     <p class="r-company">University of Toronto</p>
     <p class="r-dates">September 2019 – June 2024</p>
-    <ul><li>Mathematics & Statistics Minor</li></ul>
+    <ul>
+      <li>Mathematics & Statistics Minor</li>
+      <li><strong>CS:</strong> Software Design, Software Tools & System Programming, Computer Organization, Data Structures & Analysis, Introduction to Databases, Programming on the Web, Algorithm Design & Analysis, Introduction to Image Understanding, Computers & Society</li>
+      <li><strong>Math:</strong> Abstract Mathematics, Introduction to Combinatorics, Multivariable Calculus, Introduction to Number Theory</li>
+      <li><strong>Stats:</strong> Methods of Data Analysis, Survey Sampling & Observational Data</li>
+      <li><strong>Electives:</strong> Introduction to Film Study, Global Food System, Meditation & the Body, Music in the Contemporary World, Conservation of Tropical & Subtropical Forests</li>
+    </ul>
   </div>
 
   <div class="r-entry">
@@ -258,44 +264,97 @@ permalink: /resume/
 
   <p class="r-section">Projects</p>
   <div class="r-entry">
-    <p class="r-role">[ Project Name ]</p>
-    <p class="r-company">[ Tech stack / tools used ]</p>
-    <p class="r-dates">[ Year ]</p>
+    <p class="r-role">1-on-1 Scheduling Website</p>
+    <p class="r-company">Django · JavaScript · Tailwind · Postman · REST API</p>
+    <p class="r-dates">Jan 2024 – Apr 2024 &nbsp;·&nbsp; University of Toronto</p>
     <ul>
-      <li>[ What it does and what you built ]</li>
-      <li>[ Link or outcome ]</li>
+      <li>Led development of a scheduling website enabling 1:1 meetings for UofT Music Department, from static design to full implementation.</li>
+      <li>Built front end in HTML/CSS, JavaScript, and Tailwind; implemented Django back end with RESTful APIs, authentication, and documented endpoints via Postman.</li>
+      <li>Pre-populated database with 10 registered users and 5 calendars at different states for testing.</li>
     </ul>
   </div>
   <div class="r-entry">
-    <p class="r-role">[ Project Name ]</p>
-    <p class="r-company">[ Tech stack / tools used ]</p>
-    <p class="r-dates">[ Year ]</p>
+    <p class="r-role">Canadian Federal Election Popular Vote Analysis</p>
+    <p class="r-company">R · Multiple Regression · Post-Stratification</p>
+    <p class="r-dates">Nov 2023 – Dec 2023 &nbsp;·&nbsp; University of Toronto</p>
     <ul>
-      <li>[ What it does and what you built ]</li>
+      <li>Applied multiple regression to examine voting likelihood across independent variables; enhanced accuracy via post-stratification.</li>
+      <li>Created bar plots to visualize voter distributions across demographic categories.</li>
+    </ul>
+  </div>
+  <div class="r-entry">
+    <p class="r-role">Wine Density Linear Regression</p>
+    <p class="r-company">R · Statistical Analysis</p>
+    <p class="r-dates">Jul 2023 – Aug 2023 &nbsp;·&nbsp; University of Toronto</p>
+    <ul>
+      <li>Achieved 88.4% explanation of variance in wine density through iterative model refinement, variable transformation, outlier handling, and feature selection.</li>
+    </ul>
+  </div>
+  <div class="r-entry">
+    <p class="r-role">Memory Matching Card Game</p>
+    <p class="r-company">Java · OOP · SQL · GUI</p>
+    <p class="r-dates">Sep 2022 – Dec 2022 &nbsp;·&nbsp; University of Toronto</p>
+    <ul>
+      <li>Built a memory matching card game in Java with user account management, customizable themes via GUI, and leaderboards backed by SQL.</li>
     </ul>
   </div>
 
   <p class="r-section">Awards & Recognition</p>
   <div class="r-entry">
-    <p class="r-role">[ Award Name ]</p>
-    <p class="r-company">[ School / Organization ]</p>
-    <p class="r-dates">[ Year ]</p>
-    <ul><li>[ Brief description if needed ]</li></ul>
+    <p class="r-role">High School Honour Roll</p>
+    <p class="r-company">High School</p>
+    <p class="r-dates">2016, 2017, 2018, 2019</p>
   </div>
   <div class="r-entry">
-    <p class="r-role">[ Award Name ]</p>
-    <p class="r-company">[ School / Organization ]</p>
-    <p class="r-dates">[ Year ]</p>
+    <p class="r-role">Canadian Team Mathematics Contest</p>
+    <p class="r-company">Centre for Education in Mathematics and Computing (CEMC)</p>
+    <p class="r-dates">Dec 2018 &nbsp;·&nbsp; 3rd Place</p>
+  </div>
+  <div class="r-entry">
+    <p class="r-role">Euclid Contest — Group 2</p>
+    <p class="r-company">CEMC</p>
+    <p class="r-dates">Dec 2018</p>
+  </div>
+  <div class="r-entry">
+    <p class="r-role">Canadian Senior Mathematics Contest — Group 2</p>
+    <p class="r-company">CEMC</p>
+    <p class="r-dates">Nov 2018</p>
+  </div>
+  <div class="r-entry">
+    <p class="r-role">Cayley Contest — Group 4 &nbsp;/&nbsp; Canadian Senior Mathematics Contest — Group 3 &nbsp;/&nbsp; Avogadro Exam — 73rd Percentile</p>
+    <p class="r-company">CEMC / University of Waterloo</p>
+    <p class="r-dates">Nov–Dec 2017</p>
+  </div>
+  <div class="r-entry">
+    <p class="r-role">COMC Honour Roll &nbsp;/&nbsp; Canadian Intermediate Mathematics Contest — Group 3</p>
+    <p class="r-company">CEMC</p>
+    <p class="r-dates">2016 &nbsp;&amp;&nbsp; 2017</p>
   </div>
 
   <p class="r-section">Activities & Involvement</p>
   <div class="r-entry">
-    <p class="r-role">[ Role / Position ]</p>
-    <p class="r-company">[ Sorority Name ] — University of Toronto</p>
-    <p class="r-dates">[ Year ] – Present</p>
+    <p class="r-role">Risk Management Chair</p>
+    <p class="r-company">Alpha Kappa Delta Phi (aKDPhi) — University of Toronto</p>
+    <p class="r-dates">Jan 2021 – Present</p>
     <ul>
-      <li>[ What you do / contributed ]</li>
-      <li>[ Events, leadership, community involvement ]</li>
+      <li>Educated the Chapter on risk management through workshops, lectures, and presentations covering Risk Management Policy, Criminal Liability, Alcohol & Drug Abuse, Fire Prevention, and Sexual Abuse & Harassment programs.</li>
+    </ul>
+  </div>
+  <div class="r-entry">
+    <p class="r-role">Fundraising Chair</p>
+    <p class="r-company">Alpha Kappa Delta Phi (aKDPhi) — University of Toronto</p>
+    <p class="r-dates">Jan 2021 – Present</p>
+    <ul>
+      <li>Organized a Bubble Tea Fundraising Event — created posters, coordinated with stakeholders, and promoted via Instagram.</li>
+      <li>Led Krispy Kreme Doughnut fundraiser for Breast Cancer Awareness.</li>
+    </ul>
+  </div>
+  <div class="r-entry">
+    <p class="r-role">Manager</p>
+    <p class="r-company">Korean Canadian University & Toronto Students' Association (KCUTSA) — University of Toronto</p>
+    <p class="r-dates">Sep 2019 – Present</p>
+    <ul>
+      <li>Streamlined event planning processes; designed event posters and managed electronic databases using Excel.</li>
     </ul>
   </div>
 
