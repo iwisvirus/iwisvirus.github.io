@@ -203,6 +203,28 @@ permalink: /resume/
   </div>
 
   <div class="r-entry">
+    <p class="r-role">Mail Services Associate (Intern)</p>
+    <p class="r-company">Foresters Financial</p>
+    <p class="r-dates">May 2021 – August 2021 &nbsp;·&nbsp; Toronto, ON</p>
+    <ul>
+      <li>Performed data entry and documentation in Excel and PowerPoint with strict attention to detail, recording changes and preparing progress reports for management.</li>
+      <li>Printed, sorted, and organized confidential client insurance records, handling sensitive information with discretion and keeping files accurate and easy to retrieve.</li>
+      <li>Supported office equipment setup and maintenance, including printers used to process client documentation.</li>
+    </ul>
+  </div>
+
+  <div class="r-entry">
+    <p class="r-role">Pharmacy Assistant</p>
+    <p class="r-company">Haber's Compounding Pharmacy &amp; Shoppers Drug Mart</p>
+    <p class="r-dates">2019 – 2020 &nbsp;·&nbsp; Toronto, ON</p>
+    <ul>
+      <li>Created and updated patient records — demographics, allergies, and medications — in the pharmacy computer system, maintaining accuracy and handling personal health information with discretion.</li>
+      <li>Assisted pharmacists in preparing and dispensing medications, counting prescriptions for correct item and quantity, labelling and organizing in sequence per pharmacy protocols.</li>
+      <li>Greeted and assisted customers at the counter, providing clear, courteous service in a regulated healthcare setting.</li>
+    </ul>
+  </div>
+
+  <div class="r-entry">
     <p class="r-role">Server</p>
     <p class="r-company">Daldongnae Korean BBQ</p>
     <p class="r-dates">July 2021 – August 2025 &nbsp;·&nbsp; Toronto, ON</p>
@@ -231,6 +253,49 @@ permalink: /resume/
       <li><strong>HackTheBox & TryHackMe:</strong> Sherlock/Brutus (log analysis, attacker attribution), Volatility (memory forensics, RAM artifact extraction), Autopsy (disk imaging, timeline analysis), Windows Forensics 1 & 2 (registry, prefetch, LNK files, shellbags, browser artifacts) — mapped to MITRE ATT&CK.</li>
       <li><strong>Academic Modules:</strong> Linux for Digital Forensics, Windows CLI forensics, number systems, and forensic timestamp interpretation.</li>
       <li><strong>Scripting & Tooling:</strong> Bash/Python for log parsing, timestamp normalization, and artifact triage.</li>
+    </ul>
+  </div>
+
+  <p class="r-section">Projects</p>
+  <div class="r-entry">
+    <p class="r-role">[ Project Name ]</p>
+    <p class="r-company">[ Tech stack / tools used ]</p>
+    <p class="r-dates">[ Year ]</p>
+    <ul>
+      <li>[ What it does and what you built ]</li>
+      <li>[ Link or outcome ]</li>
+    </ul>
+  </div>
+  <div class="r-entry">
+    <p class="r-role">[ Project Name ]</p>
+    <p class="r-company">[ Tech stack / tools used ]</p>
+    <p class="r-dates">[ Year ]</p>
+    <ul>
+      <li>[ What it does and what you built ]</li>
+    </ul>
+  </div>
+
+  <p class="r-section">Awards & Recognition</p>
+  <div class="r-entry">
+    <p class="r-role">[ Award Name ]</p>
+    <p class="r-company">[ School / Organization ]</p>
+    <p class="r-dates">[ Year ]</p>
+    <ul><li>[ Brief description if needed ]</li></ul>
+  </div>
+  <div class="r-entry">
+    <p class="r-role">[ Award Name ]</p>
+    <p class="r-company">[ School / Organization ]</p>
+    <p class="r-dates">[ Year ]</p>
+  </div>
+
+  <p class="r-section">Activities & Involvement</p>
+  <div class="r-entry">
+    <p class="r-role">[ Role / Position ]</p>
+    <p class="r-company">[ Sorority Name ] — University of Toronto</p>
+    <p class="r-dates">[ Year ] – Present</p>
+    <ul>
+      <li>[ What you do / contributed ]</li>
+      <li>[ Events, leadership, community involvement ]</li>
     </ul>
   </div>
 
