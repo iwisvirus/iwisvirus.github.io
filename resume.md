@@ -253,39 +253,7 @@ permalink: /resume/
 
   <p class="r-section">Projects</p>
   <div class="r-entry">
-    <p class="r-role">1-on-1 Scheduling Website</p>
-    <p class="r-company">Django · JavaScript · Tailwind · Postman · REST API</p>
-    <p class="r-dates">Jan 2024 – Apr 2024 &nbsp;·&nbsp; University of Toronto</p>
-    <ul>
-      <li>Led development of a scheduling website enabling 1:1 meetings for UofT Music Department, from static design to full implementation.</li>
-      <li>Built front end in HTML/CSS, JavaScript, and Tailwind; implemented Django back end with RESTful APIs, authentication, and documented endpoints via Postman.</li>
-      <li>Pre-populated database with 10 registered users and 5 calendars at different states for testing.</li>
-    </ul>
-  </div>
-  <div class="r-entry">
-    <p class="r-role">Canadian Federal Election Popular Vote Analysis</p>
-    <p class="r-company">R · Multiple Regression · Post-Stratification</p>
-    <p class="r-dates">Nov 2023 – Dec 2023 &nbsp;·&nbsp; University of Toronto</p>
-    <ul>
-      <li>Applied multiple regression to examine voting likelihood across independent variables; enhanced accuracy via post-stratification.</li>
-      <li>Created bar plots to visualize voter distributions across demographic categories.</li>
-    </ul>
-  </div>
-  <div class="r-entry">
-    <p class="r-role">Wine Density Linear Regression</p>
-    <p class="r-company">R · Statistical Analysis</p>
-    <p class="r-dates">Jul 2023 – Aug 2023 &nbsp;·&nbsp; University of Toronto</p>
-    <ul>
-      <li>Achieved 88.4% explanation of variance in wine density through iterative model refinement, variable transformation, outlier handling, and feature selection.</li>
-    </ul>
-  </div>
-  <div class="r-entry">
-    <p class="r-role">Memory Matching Card Game</p>
-    <p class="r-company">Java · OOP · SQL · GUI</p>
-    <p class="r-dates">Sep 2022 – Dec 2022 &nbsp;·&nbsp; University of Toronto</p>
-    <ul>
-      <li>Built a memory matching card game in Java with user account management, customizable themes via GUI, and leaderboards backed by SQL.</li>
-    </ul>
+    <p class="r-role" style="color:#60a5fa;"><a href="/projects/" style="color:#60a5fa;">→ See full projects page</a></p>
   </div>
 
   <p class="r-section">Awards & Recognition</p>
