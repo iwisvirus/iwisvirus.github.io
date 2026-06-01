@@ -67,7 +67,15 @@ permalink: /projects/
     border-left: 2px solid #1e2530;
   }
   .project-desc li { margin-bottom: 4px; }
-  .project-tags { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 4px; }
+  .project-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 4px;
+  }
+  .project-tags { display: flex; flex-wrap: wrap; gap: 5px; }
   .project-tag {
     background: #0b0f14;
     border: 1px solid #1e2530;
@@ -76,6 +84,16 @@ permalink: /projects/
     border-radius: 4px;
     font-size: 0.72rem;
   }
+  .project-links { display: flex; gap: 10px; flex-shrink: 0; }
+  .project-link {
+    font-size: 0.75rem;
+    color: #60a5fa;
+    border: 1px solid #1e2530;
+    padding: 2px 8px;
+    border-radius: 4px;
+    transition: border-color 0.2s, color 0.2s;
+  }
+  .project-link:hover { border-color: #60a5fa55; color: #93c5fd; }
   .p-section {
     color: #22c55e;
     font-size: 0.75rem;
@@ -95,6 +113,28 @@ permalink: /projects/
 
   <h1>Projects</h1>
 
+  <p class="p-section">Professional</p>
+  <div class="projects-grid">
+
+    <div class="project-card">
+      <h3>cellphoneforensics.ca</h3>
+      <p class="project-meta">2026 &nbsp;·&nbsp; Data Rescue Labs</p>
+      <ul class="project-desc">
+        <li>Designed and built the company website for Data Rescue Labs, a Toronto-based digital forensics and data recovery firm.</li>
+        <li>[ Add details about what you built — tech stack, features, anything notable ]</li>
+      </ul>
+      <div class="project-footer">
+        <div class="project-tags">
+          <span class="project-tag">[ Add tags ]</span>
+        </div>
+        <div class="project-links">
+          <a class="project-link" href="https://cellphoneforensics.ca" target="_blank">↗ live site</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
   <p class="p-section">Software & Web</p>
   <div class="projects-grid">
 
@@ -107,14 +147,19 @@ permalink: /projects/
         <li>Implemented Django back end with RESTful APIs and proper authentication; documented endpoints and payloads via Postman.</li>
         <li>Pre-populated database with 10 registered users and 5 calendars at different states for testing.</li>
       </ul>
-      <div class="project-tags">
-        <span class="project-tag">Django</span>
-        <span class="project-tag">Python</span>
-        <span class="project-tag">JavaScript</span>
-        <span class="project-tag">Tailwind</span>
-        <span class="project-tag">Postman</span>
-        <span class="project-tag">REST API</span>
-        <span class="project-tag">HTML/CSS</span>
+      <div class="project-footer">
+        <div class="project-tags">
+          <span class="project-tag">Django</span>
+          <span class="project-tag">Python</span>
+          <span class="project-tag">JavaScript</span>
+          <span class="project-tag">Tailwind</span>
+          <span class="project-tag">Postman</span>
+          <span class="project-tag">REST API</span>
+          <span class="project-tag">HTML/CSS</span>
+        </div>
+        <div class="project-links">
+          <a class="project-link" href="https://github.com/iwisvirus/CSC309" target="_blank">↗ github</a>
+        </div>
       </div>
     </div>
 
@@ -126,11 +171,16 @@ permalink: /projects/
         <li>Implemented GUI allowing users to choose different themes.</li>
         <li>Built leaderboards with user record tracking using SQL.</li>
       </ul>
-      <div class="project-tags">
-        <span class="project-tag">Java</span>
-        <span class="project-tag">OOP</span>
-        <span class="project-tag">SQL</span>
-        <span class="project-tag">GUI</span>
+      <div class="project-footer">
+        <div class="project-tags">
+          <span class="project-tag">Java</span>
+          <span class="project-tag">OOP</span>
+          <span class="project-tag">SQL</span>
+          <span class="project-tag">GUI</span>
+        </div>
+        <div class="project-links">
+          <a class="project-link" href="https://github.com/iwisvirus/CSC209" target="_blank">↗ github</a>
+        </div>
       </div>
     </div>
 
@@ -147,11 +197,16 @@ permalink: /projects/
         <li>Enhanced model accuracy using post-stratification techniques.</li>
         <li>Created bar plots to visualize voter distributions across demographic categories.</li>
       </ul>
-      <div class="project-tags">
-        <span class="project-tag">R</span>
-        <span class="project-tag">Regression Analysis</span>
-        <span class="project-tag">Post-Stratification</span>
-        <span class="project-tag">Data Visualization</span>
+      <div class="project-footer">
+        <div class="project-tags">
+          <span class="project-tag">R</span>
+          <span class="project-tag">Regression Analysis</span>
+          <span class="project-tag">Post-Stratification</span>
+          <span class="project-tag">Data Visualization</span>
+        </div>
+        <div class="project-links">
+          <a class="project-link" href="https://github.com/iwisvirus/STA304" target="_blank">↗ github</a>
+        </div>
       </div>
     </div>
 
@@ -162,11 +217,39 @@ permalink: /projects/
         <li>Developed and refined predictive models using linear regression on a wine dataset, achieving 88.4% explanation of variance in wine density.</li>
         <li>Applied statistical analysis including variable transformation, outlier handling, and feature selection for robustness and accuracy.</li>
       </ul>
-      <div class="project-tags">
-        <span class="project-tag">R</span>
-        <span class="project-tag">Linear Regression</span>
-        <span class="project-tag">Statistical Analysis</span>
-        <span class="project-tag">Feature Selection</span>
+      <div class="project-footer">
+        <div class="project-tags">
+          <span class="project-tag">R</span>
+          <span class="project-tag">Linear Regression</span>
+          <span class="project-tag">Statistical Analysis</span>
+          <span class="project-tag">Feature Selection</span>
+        </div>
+        <div class="project-links">
+          <a class="project-link" href="https://github.com/iwisvirus/STA302" target="_blank">↗ github</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <p class="p-section">Certifications</p>
+  <div class="projects-grid">
+
+    <div class="project-card">
+      <h3>Google Cybersecurity Certificate</h3>
+      <p class="project-meta">August 2025 &nbsp;·&nbsp; Google</p>
+      <ul class="project-desc">
+        <li>Completed Google's professional cybersecurity certificate covering secure system design, risk analysis, incident response, and security practices.</li>
+      </ul>
+      <div class="project-footer">
+        <div class="project-tags">
+          <span class="project-tag">Cybersecurity</span>
+          <span class="project-tag">Incident Response</span>
+          <span class="project-tag">Risk Analysis</span>
+        </div>
+        <div class="project-links">
+          <a class="project-link" href="https://github.com/iwisvirus/Google-cybersecurity-certificate" target="_blank">↗ github</a>
+        </div>
       </div>
     </div>
 
