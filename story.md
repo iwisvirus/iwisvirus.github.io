@@ -92,10 +92,6 @@ permalink: /story/
     I grinded. School became the thing I could control, so I controlled it hard.
     Different homestay families, different houses, same routine: wake up, study, repeat.
   </p>
-  <p>
-    Back in Korea, my parents were going through a divorce. I didn't fully register it at the time —
-    I was too focused on just getting through each day. That kind of thing has a way of catching up with you later.
-  </p>
 
   <hr class="story-divider">
 
@@ -106,12 +102,7 @@ permalink: /story/
     But first semester hit differently than I expected.
     I was getting low 80s — scores I would've celebrated in high school anywhere else —
     but at UofT, surrounded by people who seemed to breathe algorithms,
-    <em>it felt like failure.</em>
-  </p>
-  <p>
-    Everything accumulated at once. The isolation, my parents' divorce finally landing,
-    being far from home with no real support system. I ended up at CAMH.
-    It was a hard time — one I don't hide, because pretending it didn't happen helps no one.
+    <em>it felt like failure.</em> It was a hard adjustment.
   </p>
 
   <div class="pull-quote">
