@@ -121,12 +121,11 @@ permalink: /story/
   <p>
     To make four years work, I took 6–7 courses per semester and stacked summer courses on top.
     Around 2020, I started working at a restaurant to cover rent and living expenses.
-    After first year, financial support from home stopped. Everything from that point — rent, food, tuition — was on me.
   </p>
   <p>
     After third year I landed an internship at Moneris as a software developer.
     I was working two other jobs alongside it.
-    My final year, I paid my own international student tuition — one of the highest in the country.
+    My final year, I paid my own international student tuition.
   </p>
 
   <div class="pull-quote">
