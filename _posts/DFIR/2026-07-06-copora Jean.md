@@ -4,18 +4,41 @@ title: Digital Corpora | 2009 M57-Jean
 date: 2026-07-06
 categories: DFIR
 ---
+Sample report!
 
-M57-Jean scenario is a single disk image scenario involving the exfiltration of corporate documents form the laptop of a senior executive. It involves a small start up company, M57.Biz. A few weeks into inception a confidential spreadsheet that contains the names and the salaries of the company's key employees was found posted to the "comments" section of one of the firm's competitors. The spreadsheet only existed on one of M57's Officers, Jean. 
+**1.PURPOSE OF REPORT**
+At your request, Data Rescue Labs(DRL) has prepared this report based on our understanding of your request. 
+ - Determine when the "m57plan.xlsx" spreadsheet was created by Jean
+ - Determine how the "m57plan.xlsx" spreadsheet got stolen by competitor's website
+ - Detemine who in the company were involved for this matter
 
-We are provided Jean's laptop image (E01 file). We want to figure out how the data was stolen. 
+Received by DRL:
+ - Image of Jean's computer's hard drive
+ - Copy of the spreadsheet
+ - Information of the staff and the company
 
-1. When did jean create spreadsheet
-- 2008/06/12 11:13 am
-2. How did it get from computer to competitor’s website?
-- Emailed : 2008/07/19 9:28am
-- File on internet : 2008/07/19 9:28am 
-3. Who was involved in the company?
-- Alison (tuckgorge) 
+**2.INDEPENDENCE AND QUALIFICATIONS**
+The writing of this report was conducted by Iris Myung. The conclusions expfressed within the report represent opinions of Iris Myung. A statement of qualificaations for Ms.Myung accompanies this report. 
+
+Iris Myung has acted independently and objectively in the preparation and analysis of this report. To the best of her knowledge, there are no conflicts of interest that may have affected this report or the anlysis of the evidence. Our fees were not contingent on the conclusions or findings of our analysis or on the actions or events resulting from the use of the report. 
+
+**3.EXECUTIVE SUMMARY**
+DRL was requested to examine the "m57plan.xlsx" file to determine how the file got posted as an attachment in the "technical support" form of a competitor's website. 
+
+DRL was informed the spreadsheet came from Jean's computer and that most documents are exchanged by mail. 
+
+**4.DETAILED FINDINGS**
+
+**4.1 Timestamp analysis**
+2008-06-12 11:13: | Jean created spreadsheet
+2008-07-19 09:28: | Jean emailed spreadsheet to Alison
+2008-08-19 09:28: | File on internet 
 
 While she was sending the attachment to alison with the attachment, the file was visited 3 times around the same time which can be found in the web history section. 
+
+
+**APPENDIX A - METHOLDOLOGY**
+**APPENDIX B - DETAILS OF THE COMPUTER**
+**APPENDIX C - GLOSSARY**
+
 
