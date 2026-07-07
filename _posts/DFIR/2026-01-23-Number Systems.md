@@ -10,6 +10,7 @@ Today, I learned number systems and timestamps.
 
 **Number Systems**
 
+
 |  System  |  Humans  |   CPU    | Forensics|
 |----------|----------|----------|----------|
 |  Decimal |     Y    |     N    |     Y    |
