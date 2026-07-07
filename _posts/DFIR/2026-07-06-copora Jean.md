@@ -40,8 +40,9 @@ From the documents in Jean's computer, the file name was "m57biz.xls".
 
 **4.1 Timestamp analysis**
 
+
 | Timestamp | Event |
-| ------ | ------ |
+|------|------|
 | 2008-06-12 11:13:51 AM | Jean created spreadsheet | 
 | 2008-07-19 07:40:36 PM | alison@m57.biz emailed Jean asking for the file using her own email| 
 | 2008-07-19 09:26:11 PM | tuckgorge@gmail.com emailed Jean asking for the file again using | 
@@ -53,6 +54,7 @@ From the documents in Jean's computer, the file name was "m57biz.xls".
 | 2008-07-20 01:03:40 AM | tuckgorge@gmail.com emailed Jean saying thanks and don't tell anyone| 
 | 2008-07-20 02:28:04 AM | Internet Explorer last visited |
 | 2008-07-20 01:28:03 PM | Last saved |
+
 
 **4.2Email Analysis**
 
