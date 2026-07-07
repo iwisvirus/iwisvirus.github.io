@@ -56,12 +56,20 @@ From the documents in Jean's computer, the file name was "m57biz.xls".
 | 2008-07-20 01:28:03 PM | Last saved |
 
 
-**4.2Email Analysis**
+**4.2 Email Analysis**
 
 Usual Alison's email address is alex <alison@m57.biz>. For the four emails that were sent back and forth, the email says alison@m57.biz  <tuckgorge@gmail.com>.
 
 **APPENDIX A - METHOLDOLOGY**
+N/A 
 **APPENDIX B - DETAILS OF THE COMPUTER**
+N/A
 **APPENDIX C - GLOSSARY**
+1. Email Created Date/Time
+2. Email Submitted Date/Time
+3. Email Delivered Date/Time
+4. Email Last modified Date/Time
+6. Forensic Image(E01)
+7. LNK file(.lnk)
 
 
