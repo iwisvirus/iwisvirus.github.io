@@ -28,9 +28,14 @@ Iris Myung has acted independently and objectively in the preparation and analys
 
 DRL was requested to examine the "m57plan.xlsx" file to determine how the file got posted as an attachment in the "technical support" form of a competitor's website. 
 
-DRL was informed the spreadsheet came from Jean's computer and that most documents are exchanged by mail. 
+DRL was informed the spreadsheet came from Jean's computer and that most documents are exchanged by mail. DRL searched for the file and found the identical file "m57biz.xls". DRL searched for this file exchange in the email bin. 
+
+DRL found out Alison normally uses the email "alison@m57.biz". She had sent Jean an email asking for a spreadsheet of all the information.  "tuckgorge@gmail.com" emailed Jean using Alison's email address "alison@m57.biz" as the name saying the spreadsheet is needed urgently. Jean emailed the attachment to "tuckgorge@gmail.com". 
+
+In conclusion: DRL can determine that the attachement was sent from Jean to a scammer who pretended to be Alison. 
 
 **4.DETAILED FINDINGS**
+
 From the documents in Jean's computer, the file name was "m57biz.xls". 
 
 **4.1 Timestamp analysis**
@@ -50,9 +55,6 @@ From the documents in Jean's computer, the file name was "m57biz.xls".
 **4.2Email Analysis**
 
 Usual Alison's email address is alex<alison@m57.biz>. For the four emails that were sent back and forth, the email says alison@m57.biz <tuckgorge@gmail.com>.
-
-While she was sending the attachment to alison with the attachment, the file was visited 3 times around the same time which can be found in the web history section. 
-
 
 **APPENDIX A - METHOLDOLOGY**
 **APPENDIX B - DETAILS OF THE COMPUTER**
