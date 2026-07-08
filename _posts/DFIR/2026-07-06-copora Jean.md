@@ -69,9 +69,11 @@ Usual Alison's email address is alex <alison@m57.biz> and she requested for the 
 ![PDF Info Screenshot](/images/jean6.png)
 
 **APPENDIX A - METHOLDOLOGY**
+
 N/A 
 
 **APPENDIX B - DETAILS OF THE COMPUTER**
+
 N/A
 
 **APPENDIX C - GLOSSARY**
