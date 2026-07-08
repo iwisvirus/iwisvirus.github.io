@@ -62,8 +62,10 @@ Usual Alison's email address is alex <alison@m57.biz>. For the four emails that 
 
 **APPENDIX A - METHOLDOLOGY**
 N/A 
+
 **APPENDIX B - DETAILS OF THE COMPUTER**
 N/A
+
 **APPENDIX C - GLOSSARY**
 1. Email Created Date/Time
 2. Email Submitted Date/Time
