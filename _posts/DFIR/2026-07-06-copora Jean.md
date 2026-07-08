@@ -85,3 +85,6 @@ N/A
 7. LNK file(.lnk)
 
 
+**Summary**
+
+At first when I schemed through the image on Magnet Axiom, I thought the spreadsheet got hacked while it was uploading on the internet (from the LNK history). But then I took a closer look and I searched for the file name in the image. I found an email that has the attachment. Then I looked at the email address and then found something weird. I found a solution to the case! I definitely need improvement on the report side. I found a blog of someone else's report and I need to improve on writing things more in detail such as chain of custody, appendix, and other criterias at well. Overall, it was a fun investigation!
