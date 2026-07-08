@@ -37,9 +37,10 @@ In conclusion: DRL can determine that the attachement was sent from Jean to a sc
 **4.DETAILED FINDINGS**
 
 From the documents in Jean's computer, the file name was "m57biz.xls". 
+![PDF Info Screenshot](/images/jean1.png)
+
 
 **4.1 Timestamp analysis**
-
 
 | Timestamp | Event |
 |------|------|
@@ -59,6 +60,11 @@ From the documents in Jean's computer, the file name was "m57biz.xls".
 **4.2 Email Analysis**
 
 Usual Alison's email address is alex <alison@m57.biz>. For the four emails that were sent back and forth, the email says alison@m57.biz  <tuckgorge@gmail.com>.
+![PDF Info Screenshot](/images/jean2.png)
+![PDF Info Screenshot](/images/jean3.png)
+![PDF Info Screenshot](/images/jean4.png)
+![PDF Info Screenshot](/images/jean5.png)
+![PDF Info Screenshot](/images/jean6.png)
 
 **APPENDIX A - METHOLDOLOGY**
 N/A 
