@@ -143,7 +143,6 @@ permalink: /about/
 
   <p class="goal-category">// life</p>
   <ul class="goals-list">
-    <li>Get Permanent Residency in Canada</li>
     <li>Build my own house</li>
     <li>Write my own book</li>
     <li>Hold a small concert</li>
