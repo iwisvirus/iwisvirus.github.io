@@ -160,12 +160,5 @@ permalink: /about/
 
   <hr class="section-divider">
 
-  <p class="section-label">Origin</p>
-  <p style="color:#9ca3af; font-size:0.88rem; margin:0 0 10px;">
-    Came to Canada in 2016 at grade 10, alone. Made it to UofT Computer Science.
-    Made it to my first digital forensics job. More to come —
-    figuring it out as life goes.
-  </p>
-  <a class="story-link" href="/story/">$ cat origin.txt →</a>
 
 </div>
